@@ -72,20 +72,13 @@ const HomePage = () => {
       <Cta_01 />
       <Strength_03 />
       <Strength_01 />
-      {/* <Message_01 /> */}
       <Service_01 />
       <Strength_02 />
-      {/* <News_01 />
-      <Case_01 /> */}
       <Cta_01 />
-      {/* <Blog_01 /> */}
       <Plan_02 />
-          <Message_01 />
+      <Message_01 />
       <Faq_01 />
-      {/* <Profile_01 />
-      <Flow_01 /> */}
       <Cta_03 />
-      {/* <Aside_01 /> */}
     </div>
   )
 }
