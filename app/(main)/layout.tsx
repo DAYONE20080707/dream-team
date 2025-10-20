@@ -13,9 +13,9 @@ interface MainLayoutProps {
 const MainLayout = ({ children }: MainLayoutProps) => {
   return (
     <div className="flex min-h-screen flex-col">
-      <Header_05 />
+      <Header_04 />
       <main className="flex-1">{children}</main>
-      <Footer_02 />
+      <Footer_01 />
     </div>
   )
 }

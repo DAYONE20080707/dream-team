@@ -67,20 +67,25 @@ import Aside_02 from "@/components/ui/module/aside/Aside_02"
 const HomePage = () => {
   return (
     <div>
-      <KeyVisual_01 />
-      <About_01 />
-      <Strength_01 />
-      <Message_01 />
-      <Service_01 />
-      <News_01 />
-      <Case_01 />
-      <Blog_01 />
-      <Plan_01 />
-      <Faq_01 />
-      <Profile_01 />
-      <Flow_01 />
+      <KeyVisual_03 />
+      <About_02 />
       <Cta_01 />
-      <Aside_01 />
+      <Strength_03 />
+      <Strength_01 />
+      {/* <Message_01 /> */}
+      <Service_01 />
+      <Strength_02 />
+      {/* <News_01 />
+      <Case_01 /> */}
+      <Cta_01 />
+      {/* <Blog_01 /> */}
+      <Plan_02 />
+          <Message_01 />
+      <Faq_01 />
+      {/* <Profile_01 />
+      <Flow_01 /> */}
+      <Cta_03 />
+      {/* <Aside_01 /> */}
     </div>
   )
 }
