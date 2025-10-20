@@ -24,7 +24,9 @@ const config = {
       fontFamily: {
         marcellus: ["Marcellus", "serif"],
         zenKaku: ["'Zen Kaku Gothic New'", "sans-serif"],
-        en: ["var(--font-en)", "sans-serif"],
+        hanken: ["var(--font-hanken)", "sans-serif"],
+        roboto: ["var(--font-roboto)", "sans-serif"],
+        en: ["var(--font-hanken)", "sans-serif"],
       },
       colors: {
         accentColor: "#4270ED",
