@@ -21,17 +21,17 @@ const Header_04 = () => {
 
   const { companyName } = CompanyInfo[0];
   return (
-    <div className="h-[98px]">
-      <header className="w-full h-20 md:h-[98px] text-[#393939] tracking-wide px-4 md:px-0 fixed top-0 left-0 z-10 bg-white">
+    <div className="">
+      <header className="w-full text-[#393939] tracking-wide px-4 md:px-0 fixed top-0 left-0 z-10 bg-white pt-[30px]">
         <div className="md:max-w-screen-xl h-full mx-auto flex items-center justify-between ">
-          <div className="flex items-center space-x-10 ">
+          <div className="flex items-center space-x-10 w-[200px]">
             <Link href="/">{CompanyInfo[0].companyName("primary")}</Link>
           </div>
           <div className="hidden md:flex flex-col justify-between items-end h-full">
-            <div className="flex items-center justify-center w-full">
+            {/* <div className="flex items-center justify-center w-full">
               <TelButton />
               <ContactButton className="h-10" />
-            </div>
+            </div> */}
             <ul className="hidden md:flex items-center space-x-10 font-semibold  ">
               {Menu.map((item, index) => (
                 <li key={index} className="py-4">

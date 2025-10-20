@@ -42,11 +42,11 @@ const Header_05 = () => {
     }
   }
 
-  const filteredMenu = Menu.filter((item) => item.name !== "お問い合わせ")
+  const filteredMenu = Menu
 
   return (
     <div className="">
-      <HeaderContent className="max-w-[1200px] fixed top-5 left-1/2 transform -translate-x-1/2 z-10 w-full transition-all duration-300 rounded-[10px]">
+      <HeaderContent className="max-w-[1700px] fixed top-5 left-1/2 transform -translate-x-1/2 z-10 w-full transition-all duration-300 rounded-[10px]">
         <div
           className={`w-full h-full flex items-center justify-between mx-auto p-3 md:py-4 md:px-10 rounded-full transition-all duration-300 ${
             isScrolled ? "bg-white bg-opacity-80" : "bg-transparent"
@@ -64,11 +64,11 @@ const Header_05 = () => {
             {filteredMenu.map((item, index) => (
               <li key={index}>
                 <Link href={item.href}>
-                  <div>{item.name}</div>
+                  <div>{item.nameJa}</div>
                 </Link>
               </li>
             ))}
-            <div className="flex items-center ">
+            {/* <div className="flex items-center ">
               {SnsButton.slice(0, 3).map((sns, index) => (
                 <SnsIconButton
                   key={index}
@@ -81,8 +81,9 @@ const Header_05 = () => {
             </div>
             <li className="">
               <ContactButton className="" />
-            </li>
+            </li> */}
           </ul>
+          <div></div>
 
           {/* ハンバーガーメニューボタン */}
           <button
