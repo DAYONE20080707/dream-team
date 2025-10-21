@@ -52,11 +52,11 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         <div className="mt-5 text-base leading-[200%]">
           {description}
         </div>
-        {showButton && (
+        {/* {showButton && (
           <div className="pt-2">
             <ArrowRightLinkButton href={href} label="" />
           </div>
-        )}
+        )} */}
       </div>
     </div>
   )
