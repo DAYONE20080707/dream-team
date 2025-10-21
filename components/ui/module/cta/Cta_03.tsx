@@ -41,7 +41,7 @@ const Cta_03 = () => {
             </p>
             <div className="flex justify-center">
               <MoreLinkButton
-                href="/contact"
+                href="tel:0000000000"
                 className=""
                 icon="/sns/tel.svg"
                 variant="blue"

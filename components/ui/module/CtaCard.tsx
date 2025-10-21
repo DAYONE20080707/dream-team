@@ -34,7 +34,7 @@ const CtaCard = () => {
 
       {/* 右側のボタン部分 */}
       <Link
-        href="/contact"
+        href="/#contact"
         className="w-full bg-accentGreen text-white px-6 py-5 rounded-full flex items-center justify-center gap-2 max-w-[508px]"
       >
         <span className="text-lg md:text-[26px] font-semibold">お問い合わせはこちら</span>
