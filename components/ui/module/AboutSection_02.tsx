@@ -37,7 +37,7 @@ const AboutSection_02 = ({
         style={{ marginLeft: "calc(50% - 50vw)" }}
       >
         <Image
-          src={imageUrl || "/top/message/message_img.png"}
+          src={imageUrl || "/top/about/about.png"}
           alt={name || "message"}
           fill
           className="object-cover w-full h-full rounded-r-[10px]"

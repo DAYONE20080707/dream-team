@@ -80,7 +80,7 @@ const HomePage = () => {
       <Cta_01 />
       <Plan_02 />
       <Benefits_01/>
-      <Message_01 />
+      <Message_03 />
       <Faq_01 />
       <Cta_03 />
     </div>
