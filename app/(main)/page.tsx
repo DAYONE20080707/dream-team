@@ -63,6 +63,7 @@ import Cta_04 from "@/components/ui/module/cta/Cta_04"
 import Aside_01 from "@/components/ui/module/aside/Aside_01"
 import Aside_02 from "@/components/ui/module/aside/Aside_02"
 import Voice_01 from "@/components/top/voice/Voice_01"
+import Benefits_01 from "@/components/top/benefits/Benefits_01"
 
 // メインページ
 const HomePage = () => {
@@ -78,6 +79,7 @@ const HomePage = () => {
       <Strength_02 />
       <Cta_01 />
       <Plan_02 />
+      <Benefits_01/>
       <Message_01 />
       <Faq_01 />
       <Cta_03 />
