@@ -7,7 +7,7 @@ import SectionContent from "@/components/ui/frame/SectionContent"
 
 const Plan_02 = () => {
   return (
-    <SectionContent>
+    <SectionContent id="price">
       <section className="w-full md:max-w-[1280px] mx-auto overflow-hidden">
         <ContentHeadline
           subTitle="Price"

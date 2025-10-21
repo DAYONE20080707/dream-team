@@ -3,12 +3,12 @@ export const Menu = [
   {
     name: "Our Service",
     nameJa: "サービスについて",
-    href: "/#service",
+    href: "/#about",
   },
   {
     name: "About  us",
     nameJa: "テスト対策",
-    href: "/#test",
+    href: "/#structure",
   },
 
   {
@@ -19,7 +19,7 @@ export const Menu = [
   {
     name: "Plan",
     nameJa: "料金プラン",
-    href: "/#plan",
+    href: "/#price",
   },
   {
     name: "FAQ",

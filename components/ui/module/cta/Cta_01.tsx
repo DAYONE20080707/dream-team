@@ -19,7 +19,7 @@ const Cta_01 = () => {
           </p>
 
           <Link
-            href="/contact"
+            href="/#contact"
             className="w-[350px] bg-white text-accentGreen px-8 py-4 rounded-full inline-flex items-center justify-center gap-3 hover:bg-gray-100 transition-colors duration-200"
           >
             <span className="text-lg font-medium">お問い合わせはこちら</span>

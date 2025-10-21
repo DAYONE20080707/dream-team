@@ -151,7 +151,7 @@ const ContactForm = () => {
   }
 
   return (
-    <SectionContent className="" variant="gradient">
+    <SectionContent className="" variant="gradient" id="contact">
       <div className="w-full max-w-[1280px] mx-auto">
         <ContentHeadline
           mainTitle="お問い合わせ"
