@@ -12,7 +12,7 @@ const Profile_01 = () => {
   return (
     <>
       <SectionContent className="bg-bgLight">
-        <section className="md:max-w-[1200px] mx-auto">
+        <section className="md:max-w-[1280px] mx-auto">
           <ContentHeadline
             subTitle="Profile"
             mainTitle="会社概要"
@@ -55,7 +55,7 @@ const Profile_01 = () => {
               style={{ border: "0" }}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              className="w-full max-w-[600px] md:max-w-[1200px]"
+              className="w-full max-w-[600px] md:max-w-[1280px]"
             />
             <p className="mt-4 font-light">
               000-000

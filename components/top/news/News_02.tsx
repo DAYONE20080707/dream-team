@@ -84,7 +84,7 @@ const News_02 = ({ limit = 5 }: NewsProps) => {
 
   return (
     <SectionContent className="bg-bgLight">
-      <section className="md:max-w-[1200px] mx-auto relative">
+      <section className="md:max-w-[1280px] mx-auto relative">
         <ContentHeadline subTitle="News" mainTitle="お知らせ" />
 
         <Swiper

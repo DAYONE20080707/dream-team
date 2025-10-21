@@ -20,7 +20,7 @@ const Service_02 = () => {
   return (
     <>
       <SectionContent id="service">
-        <section className="md:max-w-[1200px] mx-auto">
+        <section className="md:max-w-[1280px] mx-auto">
           <div className="flex flex-col-reverse md:flex-row gap-10 md:gap-20">
             <div className="flex-1 flex items-center justify-center">
               <Image

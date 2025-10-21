@@ -12,7 +12,7 @@ const Footer_02 = () => {
 
   return (
     <footer className="py-10 md:py-24 px-4 md:px-0">
-      <div className="md:max-w-[1200px] mx-auto">
+      <div className="md:max-w-[1280px] mx-auto">
         <div className="flex flex-col items-center justify-center space-y-6">
           <h4>{CompanyInfo[0].companyName("primary")}</h4>
 

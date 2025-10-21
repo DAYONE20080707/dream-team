@@ -14,7 +14,7 @@ const Strength_03 = () => {
     <>
       <SectionContent variant="gradient">
         {/* widthがフルサイズでない場合は指定する */}
-        <section className="md:max-w-[1200px] mx-auto space-y-10">
+        <section className="md:max-w-[1280px] mx-auto space-y-10">
           <ContentHeadline
             subTitle="Structure"
             mainTitle="テスト対策の仕組み"

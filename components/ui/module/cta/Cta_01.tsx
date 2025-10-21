@@ -9,7 +9,7 @@ const Cta_01 = () => {
   return (
     <>
       <div className="bg-accentGreen">
-        <section className="md:max-w-[1200px] mx-auto text-center py-16">
+        <section className="md:max-w-[1280px] mx-auto text-center py-16">
           <p className="text-white text-base mb-4">無料相談</p>
           <h2 className="text-white text-6xl md:text-[48px] font-black font-en mb-6">
             Contact

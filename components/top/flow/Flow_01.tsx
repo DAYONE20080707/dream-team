@@ -1,18 +1,18 @@
 // components/flow/Flow_01.tsx
-"use client";
+"use client"
 
-import { useState, useEffect } from "react";
-import Image from "next/image";
-import Link from "next/link";
-import ContentHeadline from "@/components/ui/frame/ContentHeadline";
-import FlowCard from "@/components/ui/ItemCard/FlowCard_01";
-import SectionContent from "@/components/ui/frame/SectionContent";
+import { useState, useEffect } from "react"
+import Image from "next/image"
+import Link from "next/link"
+import ContentHeadline from "@/components/ui/frame/ContentHeadline"
+import FlowCard from "@/components/ui/ItemCard/FlowCard_01"
+import SectionContent from "@/components/ui/frame/SectionContent"
 
 const Flow_01 = ({ className = "" }) => {
   return (
     <>
       <SectionContent className={className}>
-        <section className="md:max-w-[1200px] mx-auto">
+        <section className="md:max-w-[1280px] mx-auto">
           <ContentHeadline
             subTitle="Flow"
             mainTitle="ご利用の流れ"
@@ -80,7 +80,7 @@ const Flow_01 = ({ className = "" }) => {
         </section>
       </SectionContent>
     </>
-  );
-};
+  )
+}
 
-export default Flow_01;
+export default Flow_01

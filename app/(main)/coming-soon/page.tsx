@@ -8,7 +8,7 @@ import SectionContent from "@/components/ui/frame/SectionContent"
 const ComingSoonPage = () => {
   return (
     <PageContent variant="dot">
-      <div className="mx-auto max-w-[1200px]">
+      <div className="mx-auto max-w-[1280px]">
         <Breadcrumb
           mainTitle="Coming Soon"
           parentDirectoryName=""

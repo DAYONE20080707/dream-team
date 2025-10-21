@@ -1,12 +1,12 @@
 // components/strength/Strength_02.tsx
 
-"use client";
+"use client"
 
-import ContentHeadline from "@/components/ui/frame/ContentHeadline";
-import StrengthCard from "@/components/ui/ItemCard/StrengthCard_02";
-import { strengthData } from "@/components/data/top/StrengthData";
-import MoreLinkButton from "@/components/ui/button/MoreButton";
-import SectionContent from "@/components/ui/frame/SectionContent";
+import ContentHeadline from "@/components/ui/frame/ContentHeadline"
+import StrengthCard from "@/components/ui/ItemCard/StrengthCard_02"
+import { strengthData } from "@/components/data/top/StrengthData"
+import MoreLinkButton from "@/components/ui/button/MoreButton"
+import SectionContent from "@/components/ui/frame/SectionContent"
 
 // 強み
 const Strength_02 = () => {
@@ -14,7 +14,7 @@ const Strength_02 = () => {
     <>
       <SectionContent>
         {/* widthがフルサイズでない場合は指定する */}
-        <section className="md:max-w-[1200px] mx-auto space-y-10">
+        <section className="md:max-w-[1280px] mx-auto space-y-10">
           <ContentHeadline
             subTitle="Strength"
             mainTitle="私たちの強み"
@@ -41,7 +41,7 @@ const Strength_02 = () => {
         />
       </SectionContent>
     </>
-  );
-};
+  )
+}
 
-export default Strength_02;
+export default Strength_02

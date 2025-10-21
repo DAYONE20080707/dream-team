@@ -1,16 +1,16 @@
 // components/faq/faq_01.tsx
 
-"use client";
+"use client"
 
-import ContentHeadline from "@/components/ui/frame/ContentHeadline";
-import FaqList from "@/components/ui/module/FaqList_01";
-import MoreButton from "@/components/ui/button/MoreButton";
-import SectionContent from "@/components/ui/frame/SectionContent";
+import ContentHeadline from "@/components/ui/frame/ContentHeadline"
+import FaqList from "@/components/ui/module/FaqList_01"
+import MoreButton from "@/components/ui/button/MoreButton"
+import SectionContent from "@/components/ui/frame/SectionContent"
 
 const Faq_01 = () => {
   return (
     <SectionContent className="bg-white">
-      <section className="md:max-w-[1200px] mx-auto">
+      <section className="md:max-w-[1280px] mx-auto">
         <ContentHeadline
           subTitle="FAQ"
           mainTitle="よくある質問"
@@ -23,7 +23,7 @@ const Faq_01 = () => {
         </div>
       </section>
     </SectionContent>
-  );
-};
+  )
+}
 
-export default Faq_01;
+export default Faq_01

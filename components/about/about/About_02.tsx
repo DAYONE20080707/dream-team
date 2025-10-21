@@ -1,12 +1,12 @@
 // components/message/About_02.tsx
 
-"use client";
+"use client"
 
-import MoreLinkButton from "@/components/ui/button/MoreButton";
-import ContentHeadline from "@/components/ui/frame/ContentHeadline";
-import SectionContent from "@/components/ui/frame/SectionContent";
-import Image from "next/image";
-import AboutSection from "@/components/ui/module/AboutSection_02";
+import MoreLinkButton from "@/components/ui/button/MoreButton"
+import ContentHeadline from "@/components/ui/frame/ContentHeadline"
+import SectionContent from "@/components/ui/frame/SectionContent"
+import Image from "next/image"
+import AboutSection from "@/components/ui/module/AboutSection_02"
 
 // メッセージ
 const About_02 = () => {
@@ -14,7 +14,7 @@ const About_02 = () => {
     <>
       <SectionContent className="![padding-bottom:0]">
         {/* widthがフルサイズでない場合は指定する */}
-        <section className=" md:max-w-[1200px] mx-auto ">
+        <section className=" md:max-w-[1280px] mx-auto ">
           {/* <ContentHeadline
             subTitle="Who we are"
             maintitle="私たちについて"
@@ -40,7 +40,7 @@ const About_02 = () => {
         </section>
       </SectionContent>
     </>
-  );
-};
+  )
+}
 
-export default About_02;
+export default About_02

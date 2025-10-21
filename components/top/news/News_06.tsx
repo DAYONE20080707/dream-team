@@ -65,7 +65,7 @@ const News_05 = ({ limit = 9 }: NewsProps) => {
 
   return (
     <SectionContent>
-      <section className="md:max-w-[1200px] mx-auto md:flex justify-between gap-x-20">
+      <section className="md:max-w-[1280px] mx-auto md:flex justify-between gap-x-20">
         <div className="w-[300px]">
           <ContentHeadline subTitle="News" mainTitle="お知らせ" />
           <div className="mt-16">
@@ -81,8 +81,8 @@ const News_05 = ({ limit = 9 }: NewsProps) => {
             >
               <p className="font-medium">
                 {post.date
-                    ? format(new Date(post.date), "yyyy/MM/dd", { locale: ja })
-                    : ""}
+                  ? format(new Date(post.date), "yyyy/MM/dd", { locale: ja })
+                  : ""}
               </p>
               <p className=" w-44 h-[25px] px-2 bg-accentColor rounded-[5px] text-white flex justify-center items-center text-xs">
                 {Array.isArray(post.category) && post.category.length > 0

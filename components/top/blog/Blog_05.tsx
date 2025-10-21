@@ -1,24 +1,24 @@
 // components/blog/Blog_05.tsx
 
-"use client";
+"use client"
 
-import { useState, useEffect } from "react";
-import Image from "next/image";
-import Link from "next/link";
+import { useState, useEffect } from "react"
+import Image from "next/image"
+import Link from "next/link"
 // import { microcms } from "@/lib/microcms";
-import { Cms } from "@/types";
-import ContentHeadline from "@/components/ui/frame/ContentHeadline";
-import MoreButton from "@/components/ui/button/MoreButton";
-import { blogsFetch } from "@/lib/api/blogsFetch";
-import SectionContent from "@/components/ui/frame/SectionContent";
+import { Cms } from "@/types"
+import ContentHeadline from "@/components/ui/frame/ContentHeadline"
+import MoreButton from "@/components/ui/button/MoreButton"
+import { blogsFetch } from "@/lib/api/blogsFetch"
+import SectionContent from "@/components/ui/frame/SectionContent"
 
 interface BlogProps {
-  limit?: number;
+  limit?: number
 }
 
 const Blog_05 = ({ limit = 6 }: BlogProps) => {
-  const [contents, setContents] = useState<Cms[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [contents, setContents] = useState<Cms[]>([])
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     // 旧 microcms 実装
@@ -43,30 +43,30 @@ const Blog_05 = ({ limit = 6 }: BlogProps) => {
     */
 
     // 新 blogsFetch 実装
-    let mounted = true;
-    (async () => {
+    let mounted = true
+    ;(async () => {
       try {
-        setLoading(true);
-        const data = await blogsFetch.list(Math.min(limit ?? 100, 100));
-        if (mounted) setContents(data);
+        setLoading(true)
+        const data = await blogsFetch.list(Math.min(limit ?? 100, 100))
+        if (mounted) setContents(data)
       } catch (error) {
-        console.error("Failed to fetch blogs:", error);
-        if (mounted) setContents([]);
+        console.error("Failed to fetch blogs:", error)
+        if (mounted) setContents([])
       } finally {
-        if (mounted) setLoading(false);
+        if (mounted) setLoading(false)
       }
-    })();
+    })()
     return () => {
-      mounted = false;
-    };
-  }, [limit]);
+      mounted = false
+    }
+  }, [limit])
 
-  if (loading) return <h1>Loading...</h1>;
-  if (!contents || contents.length === 0) return <h1>No contents</h1>;
+  if (loading) return <h1>Loading...</h1>
+  if (!contents || contents.length === 0) return <h1>No contents</h1>
 
   return (
     <SectionContent>
-      <section className="md:max-w-[1200px] mx-auto">
+      <section className="md:max-w-[1280px] mx-auto">
         <div className="md:w-[300px]">
           <ContentHeadline subTitle="Blog" mainTitle="ブログ" />
         </div>
@@ -98,7 +98,7 @@ const Blog_05 = ({ limit = 6 }: BlogProps) => {
         </div>
       </section>
     </SectionContent>
-  );
-};
+  )
+}
 
-export default Blog_05;
+export default Blog_05

@@ -4,8 +4,8 @@
 
 import ContentHeadline from "@/components/ui/frame/ContentHeadline"
 import PageContent from "@/components/ui/frame/PageContent"
-import StrengthCard from "@/components/ui/ItemCard/StrengthCard_01"
-import { strengthData } from "@/components/data/top/StrengthData"
+import ResultCard from "@/components/ui/ItemCard/ResultCard"
+import { resultsData } from "@/components/data/top/ResultsData"
 import MoreLinkButton from "@/components/ui/button/MoreButton"
 import SectionContent from "@/components/ui/frame/SectionContent"
 import ContentHeadlineReverse from "@/components/ui/frame/ContentHeadlineReverse"
@@ -15,38 +15,32 @@ import Image from "next/image"
 const Strength_01 = () => {
   return (
     <>
-      <SectionContent className="rounded-t-[40px]" variant="dot">
+      <SectionContent>
         {/* widthがフルサイズでない場合は指定する */}
-        <section className="md:max-w-[1200px] mx-auto space-y-10">
-          <ContentHeadlineReverse
-            subTitle="Instagram"
-            mainTitle="アセントビジョンの活動を\nご紹介します。"
-            className="text-center text-white"
+        <section className="md:max-w-[1280px] mx-auto space-y-10">
+          <ContentHeadline
+            subTitle="Results"
+            mainTitle="点数アップ実績"
+            className="text-center text-accentColor"
           />
 
-          {/* gridレイアウトを使用して2列（モバイル）・4列（デスクトップ）に画像を配置 */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-            {/* 8枚の画像を表示 */}
-            {[1, 2, 3, 4, 5, 6, 7, 8].map((index) => (
-              <div
-                key={index}
-                className="aspect-square relative overflow-hidden rounded-lg border border-white/20"
-              >
-                <Image
-                  src={`/top/instagram/instagram_img${index}.jpg`}
-                  alt={`Instagram Image ${index}`}
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
+          {/* 2x3グリッドレイアウトでResultCardを配置 */}
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-16">
+            {resultsData.map((result) => (
+              <ResultCard
+                key={result.name}
+                name={result.name}
+                result={result.result}
+                image={result.image}
+              />
             ))}
           </div>
         </section>
-        <div className="mt-16 flex justify-center">
+        {/* <div className="mt-16 flex justify-center">
           <MoreLinkButton href="/" variant="accent">
             Follow us
           </MoreLinkButton>
-        </div>
+        </div> */}
       </SectionContent>
     </>
   )

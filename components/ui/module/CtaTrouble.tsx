@@ -1,22 +1,22 @@
-"use client";
-import Link from "next/link";
-import Image from "next/image";
-import { useTransition } from "react";
-import { useRouter } from "next/navigation";
+"use client"
+import Link from "next/link"
+import Image from "next/image"
+import { useTransition } from "react"
+import { useRouter } from "next/navigation"
 
 const CtaTrouble = () => {
-  const [isPending, startTransition] = useTransition();
-  const router = useRouter();
+  const [isPending, startTransition] = useTransition()
+  const router = useRouter()
 
   const handleClick = (href: string) => {
     startTransition(() => {
-      router.push(href);
-    });
-  };
+      router.push(href)
+    })
+  }
 
   return (
     <div className="py-10 md:py-16 bg-white text-center  px-6 md:px-0">
-      <div className="bg-mainGreen md:md:max-w-[1200px] mx-auto text-white px-5 md:px-0 py-10 md:py-16 rounded-3xl">
+      <div className="bg-mainGreen md:md:max-w-[1280px] mx-auto text-white px-5 md:px-0 py-10 md:py-16 rounded-3xl">
         <h3 className="text-[22px] md:text-[28px]">
           トラブルにあってしまったら
         </h3>
@@ -53,7 +53,7 @@ const CtaTrouble = () => {
         </p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default CtaTrouble;
+export default CtaTrouble

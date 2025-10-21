@@ -1,16 +1,16 @@
 // components/module/cta/Cta_04.tsx
-"use client";
+"use client"
 
-import Image from "next/image";
-import Link from "next/link";
-import PageContent from "@/components/ui/frame/PageContent";
-import FreeButtonBlue from "@/components/ui/button/FreeButtonBlue";
+import Image from "next/image"
+import Link from "next/link"
+import PageContent from "@/components/ui/frame/PageContent"
+import FreeButtonBlue from "@/components/ui/button/FreeButtonBlue"
 
 const Cta_04 = () => {
   return (
     <>
       <PageContent className="bg-accentColor">
-        <section className="md:max-w-[1200px] mx-auto grid grid-cols-2 gap-x-10">
+        <section className="md:max-w-[1280px] mx-auto grid grid-cols-2 gap-x-10">
           <div className="bg-white text-accentColor text-center px-16 py-6 flex flex-col items-center">
             <Image
               src="/cta/tel.svg"
@@ -50,7 +50,7 @@ const Cta_04 = () => {
         </section>
       </PageContent>
     </>
-  );
-};
+  )
+}
 
-export default Cta_04;
+export default Cta_04

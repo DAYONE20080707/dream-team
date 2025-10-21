@@ -23,7 +23,7 @@ const Profile_04 = () => {
             className="h-[250px] md:h-[400px]"
           />
         </div>
-        <section className="md:max-w-[1200px] mx-auto">
+        <section className="md:max-w-[1280px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div>
               <ContentHeadline

@@ -1,24 +1,24 @@
 // components/service/Service_01.tsx
-"use client";
+"use client"
 
-import ContentHeadline from "@/components/ui/frame/ContentHeadline";
-import ServiceCard from "@/components/ui/ItemCard/ServiceCard_01";
-import { serviceData } from "@/components/data/top/ServiceData";
-import SectionContent from "@/components/ui/frame/SectionContent";
+import ContentHeadline from "@/components/ui/frame/ContentHeadline"
+import ServiceCard from "@/components/ui/ItemCard/ServiceCard_01"
+import { serviceData } from "@/components/data/top/ServiceData"
+import SectionContent from "@/components/ui/frame/SectionContent"
 
 const Service_01 = () => {
   // 表示するサービス数をserviceDataのIDを指定して表示
-  const serviceIdsToDisplay = [1, 2, 3, 4, 5];
+  const serviceIdsToDisplay = [1, 2, 3, 4, 5]
 
   // 指定したIDに基づいてデータをフィルタリング
   const servicesToDisplay = serviceData.filter((service) =>
     serviceIdsToDisplay.includes(service.id)
-  );
+  )
 
   return (
     <>
       <SectionContent>
-        <section className="md:max-w-[1200px] mx-auto space-y-10">
+        <section className="md:max-w-[1280px] mx-auto space-y-10">
           <ContentHeadline
             subTitle="Service"
             mainTitle="事業内容"
@@ -43,7 +43,7 @@ const Service_01 = () => {
         </section>
       </SectionContent>
     </>
-  );
-};
+  )
+}
 
-export default Service_01;
+export default Service_01
