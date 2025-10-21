@@ -15,7 +15,7 @@ import Image from "next/image"
 const Strength_01 = () => {
   return (
     <>
-      <SectionContent>
+      <SectionContent id="results">
         {/* widthがフルサイズでない場合は指定する */}
         <section className="md:max-w-[1280px] mx-auto space-y-10">
           <ContentHeadline

@@ -18,7 +18,7 @@ const Voice_01 = () => {
 
   return (
     <>
-      <SectionContent variant="cream">
+      <SectionContent variant="cream" id="voice">
         <section className="md:max-w-[1280px] mx-auto">
           <ContentHeadline
             subTitle="Voice"

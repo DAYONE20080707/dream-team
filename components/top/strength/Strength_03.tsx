@@ -12,7 +12,7 @@ import SectionContent from "@/components/ui/frame/SectionContent"
 const Strength_03 = () => {
   return (
     <>
-      <SectionContent variant="gradient">
+      <SectionContent variant="gradient" id="structure">
         {/* widthがフルサイズでない場合は指定する */}
         <section className="md:max-w-[1280px] mx-auto space-y-10">
           <ContentHeadline

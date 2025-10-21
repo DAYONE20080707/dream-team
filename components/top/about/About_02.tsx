@@ -12,7 +12,7 @@ import AboutSection from "@/components/ui/module/AboutSection_02"
 const About_02 = () => {
   return (
     <>
-      <SectionContent className="">
+      <SectionContent className="" id="about">
         {/* widthがフルサイズでない場合は指定する */}
         <section className=" max-w-[1280px] mx-auto ">
           <div className="relative pt-40">

@@ -17,11 +17,12 @@ const Service_01 = () => {
 
   return (
     <>
-      <SectionContent>
+      <SectionContent variant="gradient" id="course">
         <section className="md:max-w-[1280px] mx-auto space-y-10">
           <ContentHeadline
-            subTitle="Service"
-            mainTitle="事業内容"
+            subTitle="Course"
+            mainTitle="入試対策講座"
+            className="text-white"
             subTitleClassName="text-center"
             titleClassName="text-center"
           />
