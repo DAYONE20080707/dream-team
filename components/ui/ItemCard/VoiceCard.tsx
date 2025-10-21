@@ -16,14 +16,14 @@ const VoiceCard: React.FC<VoiceCardProps> = ({
   instructorComments,
 }) => {
   return (
-    <div className="bg-white rounded-[17px] p-10">
-      <div className="flex gap-10">
+    <div className="bg-white rounded-[17px] p-5 md:p-10">
+      <div className="flex flex-col-reverse md:flex-row gap-10">
         {/* テキスト情報 */}
         <div className="flex-1">
           <h3 className="text-accentColor font-bold text-xl">{name}</h3>
           <p className=" mt-4 text-base leading-[160%]">{comment}</p>
 
-          <div className="mt-6 flex rounded-[10px] bg-bgBlue py-4 px-10">
+          <div className="mt-6 flex rounded-[10px] gap-2 bg-bgBlue py-4 px-4 md:px-10">
             <div>
               <Image
                 src="/top/voice/voice_man.png"
@@ -46,7 +46,7 @@ const VoiceCard: React.FC<VoiceCardProps> = ({
           </div>
         </div>
         {/* 生徒画像 */}
-        <div className="flex-shrink-0 w-[40%] h-full">
+        <div className="flex-shrink-0 md:w-[40%] h-full">
           <div className="relative rounded-[4px] overflow-hidden">
             <Image
               src={image}

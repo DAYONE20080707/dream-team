@@ -30,10 +30,10 @@ const BenefitsCard: React.FC<BenefitsCardProps> = ({
       )}
     >
       {/* テキスト */}
-      <div className="bg-accentColor text-accentYellow font-bold text-2xl md:text-[29px] text-center p-2 whitespace-pre-line text-center">
+      <div className="bg-accentColor text-accentYellow font-bold text-lg md:text-2xl md:text-[29px] text-center p-2 whitespace-pre-line text-center">
         {title}
         <br />
-        <span className="text-base">{attention}</span>
+        <span className="text-sm md:text-base">{attention}</span>
        
       </div>
       {/* 画像 */}

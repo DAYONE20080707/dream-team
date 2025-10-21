@@ -2,10 +2,10 @@ import PlanCard from "./PlanCard_02"
 
 const PlanList_02 = () => {
   return (
-    <div className="pb-24">
+    <div className="">
       <div className="overflow-x-scroll md:overflow-y-auto">
         <div
-          className="mt-0 md:mt-16 grid gap-x-4 min-w-[1200px]"
+          className="grid gap-x-4 min-w-[1200px]"
           style={{ gridTemplateColumns: "160px 1fr 1fr 1fr" }}
         >
           <PlanCard title="" features={["小学生", "中１生", "中３生"]} />

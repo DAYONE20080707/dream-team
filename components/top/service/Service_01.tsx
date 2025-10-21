@@ -42,7 +42,7 @@ const Service_01 = () => {
             ))}
           </div>
         </section>
-        <p className="mt-20 mx-auto text-white font-bold text-2xl md:text-[45px] text-center pb-2 border-b border-white w-fit px-10 leading-[160%]">上記の対策を個別で行うから、結果が出るんです！</p>
+        <p className="mt-20 mx-auto text-white font-bold text-xl md:text-2xl md:text-[45px] text-center pb-2 border-b border-white w-fit md:px-10 !leading-[160%]">上記の対策を個別で行うから、結果が出るんです！</p>
       </SectionContent>
     </>
   )

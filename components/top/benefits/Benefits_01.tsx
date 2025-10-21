@@ -18,7 +18,7 @@ const Benefits_01 = () => {
   return (
     <>
       <SectionContent variant="cream" id="course">
-        <section className="md:max-w-[1280px] mx-auto space-y-10">
+        <section className="md:max-w-[1152px] mx-auto space-y-10">
           <ContentHeadline
             subTitle="Benefits"
             mainTitle="特典案内"
@@ -26,7 +26,9 @@ const Benefits_01 = () => {
             subTitleClassName="text-center"
             titleClassName="text-center"
           />
-<p className="text-accentColor text-[28px] font-bold text-center">各校舎１学年５名様までなので、お早めにお問合せください。</p>
+          <p className="text-accentColor text-xl md:text-[28px] font-bold text-center">
+            各校舎１学年５名様までなので、お早めにお問合せください。
+          </p>
           <div className=" grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-8">
             {benefitsToDisplay.map((benefits) => (
               <BenefitsCard
@@ -40,7 +42,6 @@ const Benefits_01 = () => {
             ))}
           </div>
         </section>
-        
       </SectionContent>
     </>
   )

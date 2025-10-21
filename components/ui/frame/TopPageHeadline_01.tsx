@@ -27,7 +27,7 @@ const TopPageHeadline_01: React.FC<TopPageHeadline_01Props> = ({
   descriptionClassName = "",
 }) => {
   return (
-    <section className={classNames(" w-full", className)}>
+    <section className={classNames("pt-20 md:pt-0 w-full", className)}>
       {subtitleTop && (
         <p
           className={classNames(

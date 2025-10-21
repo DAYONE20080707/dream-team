@@ -31,7 +31,7 @@ const AboutSection_02 = ({
   }
 
   return (
-    <div className="flex flex-col-reverse md:flex-row justify-start md:space-x-20 pb-24">
+    <div className="flex flex-col md:flex-row justify-start md:space-x-20">
       <div
         className="h-[300px] md:h-auto relative mt-10 md:mt-0 w-full"
         style={{ marginLeft: "calc(50% - 50vw)" }}

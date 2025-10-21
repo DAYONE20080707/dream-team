@@ -27,11 +27,11 @@ const Voice_01 = () => {
             subTitleClassName="text-center"
             titleClassName="text-center"
           />
-          <p className="text-2xl text-accentColor font-bold text-center">
+          <p className="text-lg md:text-2xl text-accentColor font-bold text-center">
             GoogleMap でも高評価のクチコミをたくさんいただいています！
           </p>
 
-          <div className="mt-5 grid grid-cols-3 gap-10">
+          <div className="mt-5 grid md:grid-cols-3 gap-10">
             <div className="flex justify-center">
               <Image
                 src="/top/voice/award1.png"

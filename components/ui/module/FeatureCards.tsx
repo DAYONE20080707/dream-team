@@ -4,7 +4,7 @@ import Image from "next/image"
 
 const FeatureCards = () => {
   return (
-    <div className="flex gap-5">
+    <div className="flex gap-2 md:gap-5 ">
       {/* 左のカード - 定期テスト対策 */}
       <FeatureCard
         icon={

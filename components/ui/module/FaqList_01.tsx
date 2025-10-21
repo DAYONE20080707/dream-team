@@ -36,7 +36,7 @@ const FaqList_01 = ({ hideTab = false }: { hideTab?: boolean }) => {
         {faqData[activeCategory].items.map((item, index) => (
           <div key={index} className="mb-6 last:mb-0">
             <div
-              className="flex justify-between py-6 px-10 bg-bgLight cursor-pointer rounded-[10px]"
+              className="flex justify-between py-6 px-4 md:px-10 bg-bgLight cursor-pointer rounded-[10px]"
               onClick={() => setOpenIndex(openIndex === index ? null : index)}
             >
               <div className="flex text-lg">
@@ -49,7 +49,7 @@ const FaqList_01 = ({ hideTab = false }: { hideTab?: boolean }) => {
                 />
                 {item.question}
               </div>
-              <svg
+              <div className="flex-shrink-0"><svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="28"
                 height="28"
@@ -72,7 +72,8 @@ const FaqList_01 = ({ hideTab = false }: { hideTab?: boolean }) => {
                   strokeWidth="3"
                   strokeLinecap="round"
                 />
-              </svg>
+              </svg></div>
+              
             </div>
             {openIndex === index && (
               <div className="py-6 px-10 bg-white border flex">

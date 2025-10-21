@@ -17,7 +17,7 @@ const AboutCard: React.FC<AboutCardProps> = ({
     <div className={`pb-6 border-b border-gray-200`}>
       <div className="flex flex-col space-y-3">
         <span className="text-accentColor text-base font-black font-roboto">{number}</span>
-        <h4 className="text-accentColor text-2xl font-bold leading-tight">
+        <h4 className="text-accentColor text-lg md:text-2xl font-bold leading-tight">
           {title}
         </h4>
         <p className="text-base leading-relaxed">{description}</p>

@@ -11,11 +11,12 @@ const Cta_01 = () => {
       <div className="bg-accentGreen">
         <section className="md:max-w-[1280px] mx-auto text-center py-16">
           <p className="text-white text-base mb-4">無料相談</p>
-          <h2 className="text-white text-6xl md:text-[48px] font-black font-en mb-6">
+          <h2 className="text-white text-4xl md:text-[48px] font-black font-en mb-6">
             Contact
           </h2>
           <p className="text-white text-xl mb-12">
-            無料相談はこちら! お気軽にお問い合わせください
+            無料相談はこちら! <br  className="md:hidden"/>
+            お気軽にお問い合わせください
           </p>
 
           <Link

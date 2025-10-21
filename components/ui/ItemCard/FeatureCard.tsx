@@ -25,10 +25,10 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
       <div className="mb-4 flex justify-center">{icon}</div>
 
       {/* テキスト行1 */}
-      <p className="text-black text-sm font-bold">{textLine1}</p>
+      <p className="text-black text-[11px] md:text-sm font-bold">{textLine1}</p>
 
       {/* テキスト行2 */}
-      <p className="text-accentColor text-2xl font-bold">{textLine2}</p>
+      <p className="text-accentColor text-base md:text-2xl font-bold">{textLine2}</p>
     </div>
   )
 }

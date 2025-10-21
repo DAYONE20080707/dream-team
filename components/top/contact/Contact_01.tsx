@@ -163,7 +163,7 @@ const ContactForm = () => {
           {responseMessage && <p className="text-red-500">{responseMessage}</p>}
           <form onSubmit={handleSubmit}>
             {formFields.map((field) => (
-              <div key={field.name} className="mb-6 md:mb-10 w-full">
+              <div key={field.name} className="mb-6 md:mb-6 w-full">
                 <label className="text-sm md:text-base block mb-1 md:mb-2 ![line-height:200%]">
                   {field.label}{" "}
                   {field.required && <span className="">(必須)</span>}

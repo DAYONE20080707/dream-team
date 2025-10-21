@@ -87,7 +87,7 @@ const Header_05 = () => {
 
           {/* ハンバーガーメニューボタン */}
           <button
-            className={`block md:hidden text-white transition-transform duration-300 ${
+            className={`block md:hidden text-black transition-transform duration-300 ${
               isMenuOpen ? "rotate-90" : "rotate-0"
             }`}
             onClick={handleMenuToggle}

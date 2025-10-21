@@ -25,7 +25,7 @@ const Strength_01 = () => {
           />
 
           {/* 2x3グリッドレイアウトでResultCardを配置 */}
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-10 md:gap-y-16">
             {resultsData.map((result, index) => (
               <ResultCard
                 key={`${result.name}-${index}`}

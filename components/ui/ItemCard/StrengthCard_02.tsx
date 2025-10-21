@@ -16,9 +16,9 @@ const StrengthCard = ({
   image,
 }: StrengthCardProps) => {
   return (
-    <div className="bg-white flex gap-12 p-6 rounded-[10px]">
+    <div className="bg-white flex flex-col md:flex-row gap-6 md:gap-12 p-6 rounded-[10px]">
       {/* 左側：画像 */}
-      <div className="flex-shrink-0 w-[45%] h-full">
+      <div className="flex-shrink-0 md:w-[45%] h-[200px] md:h-full">
         <div className="relative w-full h-full">
           <Image
             fill
@@ -32,8 +32,8 @@ const StrengthCard = ({
 
       {/* 右側：テキスト */}
       <div className="flex-1">
-        <h3 className="text-accentColor font-bold text-[28px]">{title}</h3>
-        <div className="text-gray-700 text-xl leading-[200%] mt-2">
+        <h3 className="text-accentColor font-bold text-xl md:text-[28px] text-center !leading-[160%]">{title}</h3>
+        <div className="text-gray-700 text-base md:text-xl !leading-[200%] mt-2">
           {description}
         </div>
       </div>

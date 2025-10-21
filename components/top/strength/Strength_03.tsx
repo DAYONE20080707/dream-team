@@ -22,7 +22,7 @@ const Strength_03 = () => {
           />
 
           {/* gridレイアウトを使用して3列にカードを配置 */}
-          <div className="grid grid-cols-3 gap-10">
+          <div className="grid md:grid-cols-3 gap-10">
             {/* structureDataをループしてStrengthCardを生成 */}
             {structureData.map((strength) => (
               <StrengthCard

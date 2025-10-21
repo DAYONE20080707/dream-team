@@ -12,7 +12,7 @@ import CtaCard from "@/components/ui/module/CtaCard"
 const KeyVisual_03 = () => {
   return (
     <div className="mt-[100px]">
-      <FirstViewContent className="relative h-[calc(100vh-180px)]">
+      <FirstViewContent className="relative min-h-[calc(100vh-180px)] md:h-[calc(100vh-180px)]">
         {/* widthがフルサイズでない場合は指定する */}
         {/* キービジュアルの画像 */}
         <section className="w-[80%] h-full absolute right-0 rounded-l-[20px] overflow-hidden">
@@ -22,16 +22,16 @@ const KeyVisual_03 = () => {
         <div className="md:max-w-[1700px] mx-auto flex flex-col justify-center gap-10 h-full relative px-5">
           <TopPageHeadline
             subtitleTop={
-              <>お子さんの学校・学年に合わせた最適な学習指導で成績アップ</>
+              <>お子さんの学校・学年に合わせた<br className="md:hidden"/>最適な学習指導で成績アップ</>
             }
             mainTitle={
               <>
                 どんな子も伸ばす、
                 <br />
-                一人ひとりに寄り添う学び。
+                一人ひとりに<br className="md:hidden"/>寄り添う学び。
               </>
             }
-            subtitleBottom="日本語のテキストが入ります。"
+            // subtitleBottom="日本語のテキストが入ります。"
           />
           {/* カードレイアウト */}
           <FeatureCards />
@@ -39,7 +39,7 @@ const KeyVisual_03 = () => {
       </FirstViewContent>
 
       {/* CTAカード */}
-      <div className="-mt-20 relative">
+      <div className="-mt-20 relative px-5">
         <CtaCard />
       </div>
     </div>
