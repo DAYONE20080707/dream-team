@@ -37,7 +37,7 @@ const Strength_01 = () => {
           </div>
         </section>
         {/* <div className="mt-16 flex justify-center">
-          <MoreLinkButton href="/" variant="accent">
+          <MoreLinkButton href="/" variant="blue">
             Follow us
           </MoreLinkButton>
         </div> */}

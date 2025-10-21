@@ -59,7 +59,7 @@ const Service_02 = () => {
             </div>
           </div>
           <div className="mt-16 flex justify-center">
-            <MoreButton href="/service" variant="accent" />
+            <MoreButton href="/service" variant="blue" />
           </div>
         </section>
       </SectionContent>
