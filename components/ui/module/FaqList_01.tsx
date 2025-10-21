@@ -36,10 +36,10 @@ const FaqList_01 = ({ hideTab = false }: { hideTab?: boolean }) => {
         {faqData[activeCategory].items.map((item, index) => (
           <div key={index} className="mb-6 last:mb-0">
             <div
-              className="flex justify-between py-6 px-10 bg-bgLight cursor-pointer"
+              className="flex justify-between py-6 px-10 bg-bgLight cursor-pointer rounded-[10px]"
               onClick={() => setOpenIndex(openIndex === index ? null : index)}
             >
-              <div className="flex font-semibold text-lg">
+              <div className="flex text-lg">
                 <Image
                   src="/common/question-blue.svg"
                   alt="?マーク"

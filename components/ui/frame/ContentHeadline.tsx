@@ -20,7 +20,7 @@ const ContentHeadline: React.FC<ContentHeadlineProps> = ({
     <section
       id={id}
       className={classNames(
-        "w-full md:max-w-[1280px] mb-12 md:mb-16 tracking-wide",
+        "w-full md:max-w-[1280px] mb-12 md:mb-16 tracking-wide text-accentColor",
         className
       )}
     >

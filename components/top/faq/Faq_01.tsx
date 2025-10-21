@@ -18,9 +18,9 @@ const Faq_01 = () => {
           titleClassName="text-center"
         />
         <FaqList hideTab />
-        <div className="mt-16 flex justify-center">
+        {/* <div className="mt-16 flex justify-center">
           <MoreButton className="text-accentColor border-accentColor" />
-        </div>
+        </div> */}
       </section>
     </SectionContent>
   )
