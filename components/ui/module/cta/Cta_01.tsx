@@ -1,28 +1,36 @@
 // components/module/cta/Cta_01.tsx
-"use client";
+"use client"
 
-import Image from "next/image";
-import Link from "next/link";
-import PageContent from "@/components/ui/frame/PageContent";
-import FreeButtonWhite from "@/components/ui/button/FreeButtonWhite";
+import Link from "next/link"
+import PageContent from "@/components/ui/frame/PageContent"
+import { ArrowDown, CircleArrowDown } from "lucide-react"
 
 const Cta_01 = () => {
   return (
     <>
-      <PageContent className="bg-accentColor">
-        <section className="md:max-w-[1200px] mx-auto flex flex-col md:flex-row justify-center items-center gap-4 md:gap-10">
-          <p className="text-center text-[22px] text-white font-bold">
-            詳しく知りたい方は
-            <br />
-            こちらからお問い合わせ！
+      <div className="bg-accentGreen">
+        <section className="md:max-w-[1200px] mx-auto text-center py-16">
+          <p className="text-white text-base mb-4">無料相談</p>
+          <h2 className="text-white text-6xl md:text-[48px] font-black font-en mb-6">
+            Contact
+          </h2>
+          <p className="text-white text-xl mb-12">
+            無料相談はこちら! お気軽にお問い合わせください
           </p>
-          <div>
-            <FreeButtonWhite href="/" text="お問い合わせ" />
-          </div>
-        </section>
-      </PageContent>
-    </>
-  );
-};
 
-export default Cta_01;
+          <Link
+            href="/contact"
+            className="w-[350px] bg-white text-accentGreen px-8 py-4 rounded-full inline-flex items-center justify-center gap-3 hover:bg-gray-100 transition-colors duration-200"
+          >
+            <span className="text-lg font-medium">お問い合わせはこちら</span>
+            <div className="w-6 h-6 bg-accentGreen rounded-full flex items-center justify-center">
+              <ArrowDown className="w-3 h-3 text-white" />
+            </div>
+          </Link>
+        </section>
+      </div>
+    </>
+  )
+}
+
+export default Cta_01
