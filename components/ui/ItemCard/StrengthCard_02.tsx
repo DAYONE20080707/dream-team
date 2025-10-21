@@ -16,26 +16,26 @@ const StrengthCard = ({
   image,
 }: StrengthCardProps) => {
   return (
-    <div>
-      <div className="relative">
-        <div className="relative w-[720px] h-[500px]">
+    <div className="bg-white flex gap-12 p-6 rounded-[10px]">
+      {/* 左側：画像 */}
+      <div className="flex-shrink-0 w-[45%] h-full">
+        <div className="relative w-full h-full">
           <Image
             fill
             src={image}
             alt={title}
-            objectFit="cover"
-            className=""
+            className="object-cover"
             priority
           />
-        </div> 
-        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[560px] h-[376px] p-16 bg-white/80 backdrop-blur-sm flex-col justify-start items-start gap-6 inline-flex">
-          <p className="text-accentColor text-lg font-extrabold font-poppins">
-            Point{number}
-          </p>
-          <h3 className="text-[22px] font-medium text-accentColor pb-6 border-b border-accentColor">{title}</h3>
-        <p className="font-light">{description}</p>
         </div>
-        
+      </div>
+
+      {/* 右側：テキスト */}
+      <div className="flex-1">
+        <h3 className="text-accentColor font-bold text-[28px]">{title}</h3>
+        <div className="text-gray-700 text-xl leading-[200%] mt-2">
+          {description}
+        </div>
       </div>
     </div>
   )

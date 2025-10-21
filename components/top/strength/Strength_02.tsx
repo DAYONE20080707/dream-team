@@ -12,13 +12,13 @@ import SectionContent from "@/components/ui/frame/SectionContent"
 const Strength_02 = () => {
   return (
     <>
-      <SectionContent>
+      <SectionContent variant="yellow">
         {/* widthがフルサイズでない場合は指定する */}
         <section className="md:max-w-[1280px] mx-auto space-y-10">
           <ContentHeadline
-            subTitle="Strength"
-            mainTitle="私たちの強み"
-            className="text-center"
+            subTitle="Result"
+            mainTitle="合格実績"
+            className="text-center text-accentColor"
           />
 
           {/* gridレイアウトを使用して3列にカードを配置 */}
@@ -35,10 +35,10 @@ const Strength_02 = () => {
             ))}
           </div>
         </section>
-        <MoreLinkButton
+        {/* <MoreLinkButton
           href="/"
           className="mt-16 text-accentColor border-accentColor mx-auto"
-        />
+        /> */}
       </SectionContent>
     </>
   )
