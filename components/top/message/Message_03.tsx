@@ -27,7 +27,7 @@ const Message_03 = () => {
                 <br />
                 勉強に自信をなくしている子、勉強のやり方がわからない子、勉強のやる気がない子、ぜひ私たちにお任せください！どんな子どもたちとも真正面から向き合い、寄り添って対応していきます。
               </p>
-              <MoreLinkButton href="/" />
+              {/* <MoreLinkButton href="/" /> */}
             </div>
             <div className="w-[520px] flex-1 relative">
               <Image

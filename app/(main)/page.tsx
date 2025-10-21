@@ -64,6 +64,7 @@ import Aside_01 from "@/components/ui/module/aside/Aside_01"
 import Aside_02 from "@/components/ui/module/aside/Aside_02"
 import Voice_01 from "@/components/top/voice/Voice_01"
 import Benefits_01 from "@/components/top/benefits/Benefits_01"
+import Contact_01 from "@/components/top/contact/Contact_01"
 
 // メインページ
 const HomePage = () => {
@@ -74,15 +75,16 @@ const HomePage = () => {
       <Cta_01 />
       <Strength_03 />
       <Strength_01 />
-      <Voice_01/>
+      <Voice_01 />
       <Service_01 />
       <Strength_02 />
       <Cta_01 />
       <Plan_02 />
-      <Benefits_01/>
+      <Benefits_01 />
       <Message_03 />
       <Faq_01 />
       <Cta_03 />
+      <Contact_01 />
     </div>
   )
 }
