@@ -4,7 +4,7 @@
 
 import ContentHeadline from "@/components/ui/frame/ContentHeadline"
 import StrengthCard from "@/components/ui/ItemCard/StrengthCard_03"
-import { structureData } from "@/components/data/top/StructureData"
+import { structureData } from "@/data/top/StructureData"
 import MoreLinkButton from "@/components/ui/button/MoreButton"
 import SectionContent from "@/components/ui/frame/SectionContent"
 
