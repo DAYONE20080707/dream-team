@@ -27,7 +27,7 @@ const Service_01 = () => {
             titleClassName="text-center"
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-8">
             {servicesToDisplay.map((service) => (
               <ServiceCard
                 key={service.id}
@@ -42,6 +42,7 @@ const Service_01 = () => {
             ))}
           </div>
         </section>
+        <p className="mt-20 mx-auto text-white font-bold text-2xl md:text-[45px] text-center pb-2 border-b border-white w-fit px-10 leading-[160%]">上記の対策を個別で行うから、結果が出るんです！</p>
       </SectionContent>
     </>
   )
