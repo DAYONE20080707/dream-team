@@ -26,8 +26,8 @@ const Benefits_01 = () => {
             subTitleClassName="text-center"
             titleClassName="text-center"
           />
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-8">
+<p className="text-accentColor text-[28px] font-bold text-center">各校舎１学年５名様までなので、お早めにお問合せください。</p>
+          <div className=" grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-8">
             {benefitsToDisplay.map((benefits) => (
               <BenefitsCard
                 key={benefits.id}

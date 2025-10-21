@@ -12,7 +12,7 @@ import CtaCard from "@/components/ui/module/CtaCard"
 const KeyVisual_03 = () => {
   return (
     <div className="mt-[100px]">
-      <FirstViewContent className="relative h-[calc(100vh-100px)] ">
+      <FirstViewContent className="relative h-[calc(100vh-180px)]">
         {/* widthがフルサイズでない場合は指定する */}
         {/* キービジュアルの画像 */}
         <section className="w-[80%] h-full absolute right-0 rounded-l-[20px] overflow-hidden">

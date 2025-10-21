@@ -23,11 +23,12 @@ const Cta_03 = () => {
             </p>
             <div className="flex justify-center">
               <MoreLinkButton
-                href="#service"
+                href="/"
                 className=""
                 icon="/sns/line.svg"
                 variant="green"
-              />
+              >Download
+               </MoreLinkButton>
             </div>
           </div>
           <div className="bg-accentYellow text-accentColor text-center py-10 md:py-16 px-5 ">

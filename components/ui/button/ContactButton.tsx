@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { EnvelopeIcon } from "@heroicons/react/24/outline"
+import Image from "next/image"
 
 const ContactButton = ({
   className = "",
@@ -14,11 +14,19 @@ const ContactButton = ({
   return (
     <Link
       href="/contact"
-      className={`bg-accentColor text-white cursor-pointer flex items-center justify-center w-full px-10 py-4 rounded-full ${
-        isEnglish ? "font-en text-lg tracking-[0.03em]" : " text-base tracking-[0.05em]"
+      className={`bg-accentGreen text-white cursor-pointer flex items-center justify-center w-full px-10 py-4 rounded-[10px] ${
+        isEnglish
+          ? "font-en text-lg tracking-[0.03em]"
+          : " text-base tracking-[0.05em]"
       } ${className}`}
     >
-      <EnvelopeIcon className="w-4 h-4 mr-1" />
+      <Image
+        src="/sns/line.svg"
+        alt="LINE"
+        width={30}
+        height={30}
+        className="mr-1"
+      />
       {children}
     </Link>
   )

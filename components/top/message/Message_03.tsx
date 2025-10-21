@@ -16,7 +16,7 @@ const Message_03 = () => {
         <section className=" md:max-w-[1280px] mx-auto ">
           {/* <ContentHeadline subTitle="Who we are" mainTitle="私たちについて" /> */}
           <div className="mt-16 flex justify-start space-x-20 items-stretch">
-            <div className="w-[600px]">
+            <div className="w-[45%]">
               <h3 className="text-accentColor text-5xl font-bold leading-[160%]">
                 勉強に自信を、
                 <br />
@@ -29,7 +29,7 @@ const Message_03 = () => {
               </p>
               {/* <MoreLinkButton href="/" /> */}
             </div>
-            <div className="w-[520px] flex-1 relative">
+            <div className="w-[55%] flex-1 relative">
               <Image
                 src="/top/message/message.png"
                 alt="message"

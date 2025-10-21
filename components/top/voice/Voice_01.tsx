@@ -31,14 +31,14 @@ const Voice_01 = () => {
             GoogleMap でも高評価のクチコミをたくさんいただいています！
           </p>
 
-          <div className="mt-5 flex items-center justify-center gap-10">
+          <div className="mt-5 grid grid-cols-3 gap-10">
             <div className="flex justify-center">
               <Image
                 src="/top/voice/award1.png"
                 alt="Award 1"
                 width={300}
                 height={200}
-                className="object-contain"
+                className="object-contain w-full"
               />
             </div>
             <div className="flex justify-center">
@@ -47,7 +47,7 @@ const Voice_01 = () => {
                 alt="Award 2"
                 width={300}
                 height={200}
-                className="object-contain"
+                className="object-contain w-full"
               />
             </div>
             <div className="flex justify-center">
@@ -56,7 +56,7 @@ const Voice_01 = () => {
                 alt="Award 3"
                 width={300}
                 height={200}
-                className="object-contain"
+                className="object-contain w-full"
               />
             </div>
           </div>

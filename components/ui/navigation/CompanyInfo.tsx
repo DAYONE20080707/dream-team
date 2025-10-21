@@ -17,9 +17,9 @@ export const CompanyInfo = [
         className="w-full h-full object-contain"
       />
     ),
-    companyNameText: "企業名企業名企業名企業名企業名",
-    companyPostalCode: "000-000",
-    companyAddress: "○○県○○市○○町00-00○○○○○ビル00F",
+    companyNameText: "株式会社ドリーム・チーム",
+    companyPostalCode: "〒531-0072",
+    companyAddress: "大阪府大阪市北区豊崎3-1-22淀川6番館201",
     companyTel: "000-000-0000",
     companyTelHref: "tel:0000000000",
     companyEmail: "info@company.co.jp",
