@@ -7,7 +7,7 @@ interface SectionContentProps {
   children: ReactNode
   className?: string
   style?: React.CSSProperties
-  variant?: "default" | "dot" | "light"
+  variant?: "default" | "dot" | "light" | "gradient" | "cream" | "yellow"
   id?: string
 }
 
@@ -36,6 +36,25 @@ const SectionContent: React.FC<SectionContentProps> = ({
         ...style,
       }
     }
+    if (variant === "gradient") {
+      return {
+        background:
+          "linear-gradient(90deg, #91C4FF 0%, #4394F2 18.13%, #0563D2 65.92%)",
+        ...style,
+      }
+    }
+    if (variant === "cream") {
+      return {
+        backgroundColor: "#FFFCEA",
+        ...style,
+      }
+    }
+    if (variant === "yellow") {
+      return {
+        backgroundColor: "#FFF200",
+        ...style,
+      }
+    }
     return style
   }
 
@@ -43,7 +62,7 @@ const SectionContent: React.FC<SectionContentProps> = ({
     <div
       id={id}
       className={classNames(
-        "mx-auto py-16 md:py-[120px] px-4 md:px-5 max-w-[1280px]",
+        "mx-auto py-16 md:py-[120px] px-4 md:px-5",
         className
       )}
       style={getVariantStyle()}

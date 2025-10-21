@@ -14,7 +14,7 @@ const About_02 = () => {
     <>
       <SectionContent className="">
         {/* widthがフルサイズでない場合は指定する */}
-        <section className=" mx-auto ">
+        <section className=" max-w-[1280px] mx-auto ">
           <div className="relative pt-40">
             <span className="absolute top-0 left-1/2 transform -translate-x-1/2 text-[213px] font-black font-en text-bgBlue whitespace-nowrap leading-[100%]">
               What We Can Do
