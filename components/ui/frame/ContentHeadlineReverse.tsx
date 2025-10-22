@@ -19,7 +19,7 @@ const ContentHeadlineReverse: React.FC<ContentHeadlineProps> = ({
     <section
       id={id}
       className={classNames(
-        "w-full md:max-w-[1200px] mb-16 tracking-wide text-accentColor",
+        "w-full md:max-w-[1280px] mb-16 tracking-wide text-accentColor",
         className
       )}
     >

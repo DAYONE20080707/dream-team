@@ -68,7 +68,7 @@ const Case_03 = ({ limit = 3 }: CaseProps) => {
 
   return (
     <SectionContent>
-      <section className="md:max-w-[1200px] mx-auto space-y-10">
+      <section className="md:max-w-[1280px] mx-auto space-y-10">
         <ContentHeadline subTitle="Case study" mainTitle="導入事例" />
 
         <div className="grid grid-cols-1 md:grid-cols-3 md:gap-x-10">

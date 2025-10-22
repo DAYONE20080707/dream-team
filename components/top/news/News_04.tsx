@@ -68,7 +68,7 @@ const News_04 = ({ limit = 3 }: NewsProps) => {
 
   return (
     <SectionContent>
-      <section className="md:max-w-[1200px] mx-auto md:flex justify-between">
+      <section className="md:max-w-[1280px] mx-auto md:flex justify-between">
         <div className="w-[300px]">
           <ContentHeadline subTitle="News" mainTitle="お知らせ" />
           <div className="mt-16 flex justify-center">

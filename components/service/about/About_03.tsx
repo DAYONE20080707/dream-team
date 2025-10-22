@@ -1,12 +1,12 @@
 // components/message/About_03.tsx
 
-"use client";
+"use client"
 
-import MoreLinkButton from "@/components/ui/button/MoreButton";
-import ContentHeadline from "@/components/ui/frame/ContentHeadline";
-import SectionContent from "@/components/ui/frame/SectionContent";
-import Image from "next/image";
-import AboutSection from "@/components/ui/module/AboutSection_03";
+import MoreLinkButton from "@/components/ui/button/MoreButton"
+import ContentHeadline from "@/components/ui/frame/ContentHeadline"
+import SectionContent from "@/components/ui/frame/SectionContent"
+import Image from "next/image"
+import AboutSection from "@/components/ui/module/AboutSection_03"
 
 // メッセージ
 const About_03 = () => {
@@ -14,7 +14,7 @@ const About_03 = () => {
     <>
       <SectionContent className="![padding-bottom:0]">
         {/* widthがフルサイズでない場合は指定する */}
-        <section className=" md:max-w-[1200px] mx-auto ">
+        <section className=" md:max-w-[1280px] mx-auto ">
           <div className=" md:flex justify-start">
             <ContentHeadline subTitle="Who we are" mainTitle="私たちについて" />
             <AboutSection
@@ -38,7 +38,7 @@ const About_03 = () => {
         </section>
       </SectionContent>
     </>
-  );
-};
+  )
+}
 
-export default About_03;
+export default About_03

@@ -84,8 +84,16 @@ body,
   font-family: var(--font-marcellus), serif;
 }
 
+.font-hanken {
+  font-family: var(--font-hanken), sans-serif;
+}
+
+.font-roboto {
+  font-family: var(--font-roboto), sans-serif;
+}
+
 .font-en {
-  font-family: var(--font-en), sans-serif;
+  font-family: var(--font-hanken), sans-serif;
 }
 
 /* swiper */

@@ -27,11 +27,11 @@ const TopPageHeadline_01: React.FC<TopPageHeadline_01Props> = ({
   descriptionClassName = "",
 }) => {
   return (
-    <section className={classNames("md:max-w-[600px] w-full", className)}>
+    <section className={classNames("pt-20 md:pt-0 w-full", className)}>
       {subtitleTop && (
         <p
           className={classNames(
-            "text-lg md:text-2xl font-extrabold font-en tracking-[0.05em] !leading-[110%]",
+            "text-lg md:text-[28px] font-bold tracking-[0.05em] !leading-[110%] text-accentColor",
             subtitleClassName
           )}
         >
@@ -40,7 +40,7 @@ const TopPageHeadline_01: React.FC<TopPageHeadline_01Props> = ({
       )}
       <h1
         className={classNames(
-          "text-3xl md:text-[50px] !leading-[160%] tracking-[0.05em] mt-4",
+          "text-3xl md:text-[67px] !leading-[160%] tracking-[0.05em] mt-4 font-bold text-accentColor",
           titleClassName
         )}
       >

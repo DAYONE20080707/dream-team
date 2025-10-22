@@ -1,16 +1,16 @@
 // components/module/aside/Aside_02.tsx
-"use client";
+"use client"
 
-import Image from "next/image";
-import Link from "next/link";
-import PageContent from "@/components/ui/frame/PageContent";
-import MoreButton from "@/components/ui/button/MoreButton";
+import Image from "next/image"
+import Link from "next/link"
+import PageContent from "@/components/ui/frame/PageContent"
+import MoreButton from "@/components/ui/button/MoreButton"
 
 const Aside_02 = () => {
   return (
     <>
       <PageContent className="bg-white">
-        <section className="md:max-w-[1200px]  py-16 mx-auto grid grid-cols-2 ">
+        <section className="md:max-w-[1280px]  py-16 mx-auto grid grid-cols-2 ">
           <div className="bg-accentColor rounded-l-lg flex flex-col items-center text-white py-16">
             <p className="text-lg font-semibold">見出し</p>
             <h4 className="text-[40px] font-poppins font-bold">asideaside</h4>
@@ -36,7 +36,7 @@ const Aside_02 = () => {
         </section>
       </PageContent>
     </>
-  );
-};
+  )
+}
 
-export default Aside_02;
+export default Aside_02

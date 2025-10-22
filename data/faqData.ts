@@ -3,46 +3,68 @@ export const faqData = {
     name: "カテゴリ1",
     items: [
       {
-        question: "質問1-1",
-        answerTitle: "回答1タイトルが入ります",
-        answer: "回答1-1が入ります",
+        question: "部活と両立できますか？",
+        answerTitle: "部活との両立は十分可能です",
+        answer:
+          "当塾では部活動を頑張る生徒さんを応援しています。授業時間を部活のスケジュールに合わせて調整したり、振替授業制度を活用していただけます。また、効率的な学習方法を指導し、限られた時間でも最大限の成果を上げられるようサポートいたします。",
       },
       {
-        question: "質問1-2",
-        answerTitle: "回答1タイトルが入ります",
-        answer: "回答1-2が入ります",
+        question:
+          "入塾説明や体験授業を受けたら入塾しないといけないでしょうか？",
+        answerTitle: "入塾は強制ではありません",
+        answer:
+          "入塾説明や体験授業は、当塾の指導方針や授業内容を理解していただくためのものです。受講後も入塾を強制することは一切ありません。お子様に合うかどうか、じっくり検討していただいてからご判断ください。",
+      },
+      {
+        question: "振替授業は可能でしょうか？",
+        answerTitle: "振替授業制度を完備しています",
+        answer:
+          "体調不良や学校行事などで授業を欠席される場合、振替授業をご利用いただけます。同じ内容の授業を別の日程で受講でき、学習の遅れを防げます。振替希望は事前にご連絡いただければ、可能な限り調整いたします。",
+      },
+      {
+        question: "英検対策は可能でしょうか？",
+        answerTitle: "英検対策コースを開講しています",
+        answer:
+          "英検3級から1級まで、各級に特化した対策コースをご用意しています。過去問演習、語彙力強化、リスニング対策など、合格に必要なスキルを総合的に指導いたします。また、個別指導での弱点克服も可能です。",
+      },
+      {
+        question:
+          "質問内容入ります質問内容入ります質問内容入ります質問内容入ります質問内容入ります質問内容入ります質問内容入ります",
+        answerTitle: "ご質問にお答えします",
+        answer:
+          "この質問については、お子様の学習状況や目標に応じて個別にご相談させていただきます。まずは無料の学習相談にお越しいただき、お子様に最適な学習プランをご提案いたします。お気軽にお問い合わせください。",
       },
     ],
   },
-  category2: {
-    name: "カテゴリ2",
-    items: [
-      {
-        question: "質問2-1",
-        answerTitle: "回答1タイトルが入ります",
-        answer: "回答2-1が入ります",
-      },
-      {
-        question: "質問2-2",
-        answerTitle: "回答1タイトルが入ります",
-        answer: "回答2-2が入ります",
-      },
-    ],
-  },
+  // category2: {
+  //   name: "カテゴリ2",
+  //   items: [
+  //     {
+  //       question: "入塾説明や体験授業を受けたら入塾しないといけないでしょうか？",
+  //       answerTitle: "回答1タイトルが入ります",
+  //       answer: "回答2-1が入ります",
+  //     },
+  //     {
+  //       question: "質問2-2",
+  //       answerTitle: "回答1タイトルが入ります",
+  //       answer: "回答2-2が入ります",
+  //     },
+  //   ],
+  // },
   // ... 他のカテゴリ
-};
+}
 
 export type FaqItem = {
-  question: string;
-  answerTitle: string;
-  answer: string;
-};
+  question: string
+  answerTitle: string
+  answer: string
+}
 
 export type FaqCategory = {
-  name: string;
-  items: FaqItem[];
-};
+  name: string
+  items: FaqItem[]
+}
 
 export type FaqData = {
-  [key: string]: FaqCategory;
-};
+  [key: string]: FaqCategory
+}

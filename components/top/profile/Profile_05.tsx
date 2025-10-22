@@ -12,7 +12,7 @@ const Profile_05 = () => {
   return (
     <>
       <SectionContent className="bg-bgLight">
-        <section className="md:max-w-[1200px] mx-auto">
+        <section className="md:max-w-[1280px] mx-auto">
           {/* <ContentHeadline
             enTitle="Profile"
             mainTitle="会社概要"

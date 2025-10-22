@@ -27,68 +27,36 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   showButton = true, // デフォルトでボタンを表示する設定
 }) => {
   return (
-    <div className={classNames("relative overflow-hidden", className)}>
-      <div
-        className={classNames(
-          {
-            "h-[250px] md:h-[400px] ": !className.includes("overlay"),
-            "h-[250px] md:h-[600px]": className.includes("overlay"),
-          },
-          "w-full aspect-[1/1] relative rounded-[30px]",
-          imageContainerClass
-        )}
-      >
+    <div
+      className={classNames(
+        "bg-white border border-blue-200 rounded-[10px] overflow-hidden p-6",
+        className
+      )}
+    >
+      {/* 上部：画像 */}
+      <div className="relative h-[352px] w-full">
         <Image
           fill
           src={image}
           alt={`solution ${id}`}
-          objectFit="cover"
-          className="block object-top rounded-[30px]"
+          className="object-cover rounded-[10px]"
           priority
         />
       </div>
 
-      <div
-        className={classNames("space-y-3 ", {
-          "w-full md:h-[600px]  rounded-[30px] absolute inset-0 flex flex-col justify-center items-center bg-black/50 text-white":
-            className.includes("overlay"),
-          "relative text-black ": !className.includes("overlay"),
-        })}
-      >
-        <div
-          className={classNames("font-bold text-[16px] font-poppins text-left text-accentColor ", {
-            "text-white": className.includes("overlay"),
-            "text-accentColor": !className.includes("overlay"),
-          })}
-        >
-          {subTitle}
-        </div>
-        <div
-          className={classNames("font-medium text-[22px] font-poppins text-left  ", {
-            "text-white": className.includes("overlay"),
-            "text-baseColor": !className.includes("overlay"),
-          })}
-        >
+      {/* 下部：テキスト */}
+      <div className="mt-5">
+        <div className="text-accentColor font-bold text-2xl text-center pb-2 border-b border-accentColor">
           {title}
         </div>
-        <div
-          className={classNames("font-light",{
-            "text-white  px-10 md:px-20": className.includes("overlay"),
-            "text-baseColor": !className.includes("overlay"),
-          })}
-        >
+        <div className="mt-5 text-base leading-[200%]">
           {description}
         </div>
-        {showButton && ( // showButtonがtrueの場合のみ表示
-          <div
-            className={classNames({
-              hidden: className.includes("overlay"),
-              "text-black": !className.includes("overlay"),
-            })}
-          >
+        {/* {showButton && (
+          <div className="pt-2">
             <ArrowRightLinkButton href={href} label="" />
           </div>
-        )}
+        )} */}
       </div>
     </div>
   )

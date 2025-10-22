@@ -1,7 +1,4 @@
-import Header_01 from "@/components/header/Header_01"
-import Header_02 from "@/components/header/Header_02"
-import Header_03 from "@/components/header/Header_03"
-import Header_04 from "@/components/header/Header_04"
+
 import Footer1 from "@/components/footer/Footer_01"
 import Footer2 from "@/components/footer/Footer_02"
 import KeyVisual_01 from "@/components/top/kv/KeyVisual_01"
@@ -62,25 +59,29 @@ import Cta_03 from "@/components/ui/module/cta/Cta_03"
 import Cta_04 from "@/components/ui/module/cta/Cta_04"
 import Aside_01 from "@/components/ui/module/aside/Aside_01"
 import Aside_02 from "@/components/ui/module/aside/Aside_02"
+import Voice_01 from "@/components/top/voice/Voice_01"
+import Benefits_01 from "@/components/top/benefits/Benefits_01"
+import Contact_01 from "@/components/top/contact/Contact_01"
 
 // メインページ
 const HomePage = () => {
   return (
     <div>
-      <KeyVisual_01 />
-      <About_01 />
-      <Strength_01 />
-      <Message_01 />
-      <Service_01 />
-      <News_01 />
-      <Case_01 />
-      <Blog_01 />
-      <Plan_01 />
-      <Faq_01 />
-      <Profile_01 />
-      <Flow_01 />
+      <KeyVisual_03 />
+      <About_02 />
       <Cta_01 />
-      <Aside_01 />
+      <Strength_03 />
+      <Strength_01 />
+      <Voice_01 />
+      <Service_01 />
+      <Strength_02 />
+      <Cta_01 />
+      <Plan_02 />
+      <Benefits_01 />
+      <Message_03 />
+      <Faq_01 />
+      <Cta_03 />
+      <Contact_01 />
     </div>
   )
 }

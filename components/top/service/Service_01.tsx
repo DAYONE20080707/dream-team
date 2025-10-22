@@ -1,32 +1,33 @@
 // components/service/Service_01.tsx
-"use client";
+"use client"
 
-import ContentHeadline from "@/components/ui/frame/ContentHeadline";
-import ServiceCard from "@/components/ui/ItemCard/ServiceCard_01";
-import { serviceData } from "@/components/data/top/ServiceData";
-import SectionContent from "@/components/ui/frame/SectionContent";
+import ContentHeadline from "@/components/ui/frame/ContentHeadline"
+import ServiceCard from "@/components/ui/ItemCard/ServiceCard_01"
+import { serviceData } from "@/data/top/ServiceData"
+import SectionContent from "@/components/ui/frame/SectionContent"
 
 const Service_01 = () => {
   // 表示するサービス数をserviceDataのIDを指定して表示
-  const serviceIdsToDisplay = [1, 2, 3, 4, 5];
+  const serviceIdsToDisplay = [1, 2, 3, 4, 5]
 
   // 指定したIDに基づいてデータをフィルタリング
   const servicesToDisplay = serviceData.filter((service) =>
     serviceIdsToDisplay.includes(service.id)
-  );
+  )
 
   return (
     <>
-      <SectionContent>
-        <section className="md:max-w-[1200px] mx-auto space-y-10">
+      <SectionContent variant="gradient" id="course">
+        <section className="md:max-w-[1280px] mx-auto space-y-10">
           <ContentHeadline
-            subTitle="Service"
-            mainTitle="事業内容"
+            subTitle="Course"
+            mainTitle="入試対策講座"
+            className="text-white"
             subTitleClassName="text-center"
             titleClassName="text-center"
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-8">
             {servicesToDisplay.map((service) => (
               <ServiceCard
                 key={service.id}
@@ -41,9 +42,10 @@ const Service_01 = () => {
             ))}
           </div>
         </section>
+        <p className="mt-20 mx-auto text-white font-bold text-xl md:text-2xl md:text-[45px] text-center pb-2 border-b border-white w-fit md:px-10 !leading-[160%]">上記の対策を個別で行うから、結果が出るんです！</p>
       </SectionContent>
     </>
-  );
-};
+  )
+}
 
-export default Service_01;
+export default Service_01

@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import MoreButton from "@/components/ui/button/MoreButton"
 import Image from "next/image"
 
@@ -47,11 +47,7 @@ const AboutSection_01 = ({
             </p>
           )}
           {buttonHref && (
-            <MoreButton
-              href={buttonHref}
-              className="mt-10"
-              variant="accent"
-            >
+            <MoreButton href={buttonHref} className="mt-10" variant="blue">
               About us
             </MoreButton>
           )}

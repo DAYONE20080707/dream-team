@@ -1,10 +1,10 @@
-"use client";
-import Link from "next/link";
-import Image from "next/image";
+"use client"
+import Link from "next/link"
+import Image from "next/image"
 
 const PlanOption = () => {
   return (
-    <section className="md:max-w-[1200px] mx-auto pt-24">
+    <section className="md:max-w-[1280px] mx-auto pt-24">
       <h3 className="text-center text-[20px] md:text-[28px] font-bold">
         オプション
       </h3>
@@ -77,7 +77,7 @@ const PlanOption = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default PlanOption;
+export default PlanOption

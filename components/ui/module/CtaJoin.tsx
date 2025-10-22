@@ -1,25 +1,25 @@
 // components/ui/main/module/CtaJoin.tsx
 
-"use client";
+"use client"
 
-import { useTransition } from "react";
-import { useRouter } from "next/navigation";
-import ContentHeadline from "@/components/ui/frame/ContentHeadline";
-import FreeButtonBlue from "../button/FreeButtonBlue";
+import { useTransition } from "react"
+import { useRouter } from "next/navigation"
+import ContentHeadline from "@/components/ui/frame/ContentHeadline"
+import FreeButtonBlue from "../button/FreeButtonBlue"
 
 const CtaJoin = () => {
-  const [isPending, startTransition] = useTransition();
-  const router = useRouter();
+  const [isPending, startTransition] = useTransition()
+  const router = useRouter()
 
   const handleClick = (href: string) => {
     startTransition(() => {
-      router.push(href);
-    });
-  };
+      router.push(href)
+    })
+  }
 
   return (
     <div className="py-16 bg-mainBlue">
-      <div className="md:md:max-w-[1200px] mx-auto text-white px-6 md:px-0">
+      <div className="md:md:max-w-[1280px] mx-auto text-white px-6 md:px-0">
         <ContentHeadline
           ImageSrc="/common/join_cta.svg"
           ImageWidth={35}
@@ -44,7 +44,7 @@ const CtaJoin = () => {
         </ul>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default CtaJoin;
+export default CtaJoin

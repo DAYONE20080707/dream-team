@@ -2,63 +2,81 @@
 
 import Link from "next/link"
 import classNames from "classnames"
+import Image from "next/image"
+import { ArrowRight } from "lucide-react"
 
 const MoreLinkButton = ({
   href = "/", // デフォルトの href を "/" に設定
   className = "",
   children = "View more", // デフォルトのテキスト
-  variant = "white", // デフォルトは白バージョン
+  icon = "/sns/line.svg", // デフォルトのアイコン
+  variant = "default", // デフォルトのバリアント
+  showArrow = true, // デフォルトで矢印を表示
 }: {
   href?: string
   className?: string
   children?: React.ReactNode
-  variant?: "white" | "accent" | "black"
+  icon?: string
+  variant?: "default" | "green" | "blue"
+  showArrow?: boolean
 }) => {
-  // バリエーションに基づくスタイルを決定
-  const getVariantStyles = () => {
+  // バリアントに基づくテキストカラーを決定
+  const getTextColor = () => {
     switch (variant) {
-      case "accent":
-        return "bg-accentColor text-white border-accentColor"
-      case "black":
-        return "bg-transparent text-baseColor border-baseColor"
-      default: // white
-        return "bg-transparent text-white border-white"
+      case "green":
+        return "text-accentGreen"
+      case "blue":
+        return "text-accentColor"
+      default:
+        return "text-white"
     }
   }
 
-  // 矢印の色を決定
-  const getArrowColor = () => {
+  // バリアントに基づく矢印の背景色を決定
+  const getArrowBgColor = () => {
     switch (variant) {
-      case "accent":
-        return "white"
-      case "black":
-        return "black"
-      default: // white
-        return "white"
+      case "green":
+        return "bg-accentGreen"
+      case "blue":
+        return "bg-accentColor"
+      default:
+        return "bg-accentGreen"
     }
   }
-
   return (
     <Link
       href={href}
       className={classNames(
-        "border font-en tracking-[0.03em] cursor-pointer flex items-center justify-between w-full md:w-[300px] px-6 py-4 relative group",
-        getVariantStyles(),
+        "bg-white border-white font-en tracking-[0.03em] cursor-pointer flex items-center justify-between w-full md:w-[300px] px-6 py-4 relative group rounded-full",
+        getTextColor(),
         className
       )}
     >
+      {/* アイコン */}
+      <div className="w-6 h-6 bg-white rounded flex items-center justify-center mr-3">
+        <Image
+          src={icon}
+          alt="icon"
+          width={30}
+          height={30}
+          className="object-contain"
+        />
+      </div>
       <span>{children}</span>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-      >
-        <path d="M6.25 12H17.75" stroke={getArrowColor()} />
-        <path d="M13.75 8L17.75 12L13.75 16" stroke={getArrowColor()} />
-        <circle cx="12" cy="12" r="11.5" stroke={getArrowColor()} />
-      </svg>
+      {/* 右矢印 */}
+      <div className=" w-6 h-6">
+        
+        {showArrow && (
+          <div
+            className={classNames(
+              "text-white rounded-full flex justify-center items-center h-full",
+              getArrowBgColor()
+            )}
+          >
+            <ArrowRight className="w-3 h-3" />
+          </div>
+        )}
+      </div>
     </Link>
   )
 }

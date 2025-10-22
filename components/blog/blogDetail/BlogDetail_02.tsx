@@ -81,7 +81,7 @@ const BlogDetail_02 = ({ params }: BlogDetailProps) => {
   if (loading) {
     return (
       <div className="bg-bgLight pb-24">
-        <div className="max-w-[1200px] mx-auto pt-24 px-3">
+        <div className="max-w-[1280px] mx-auto pt-24 px-3">
           <div className="text-center">
             <p>読み込み中...</p>
           </div>
@@ -93,7 +93,7 @@ const BlogDetail_02 = ({ params }: BlogDetailProps) => {
   if (error || !post) {
     return (
       <div className="bg-bgLight pb-24">
-        <div className="max-w-[1200px] mx-auto pt-24 px-3">
+        <div className="max-w-[1280px] mx-auto pt-24 px-3">
           <div className="text-center">
             <p>{error || "記事が見つかりませんでした"}</p>
           </div>
@@ -115,7 +115,7 @@ const BlogDetail_02 = ({ params }: BlogDetailProps) => {
         </div>
       )}
 
-      <div className="max-w-[1200px] mx-auto mt-10 md:mt-24 px-3">
+      <div className="max-w-[1280px] mx-auto mt-10 md:mt-24 px-3">
         <article className="bg-white p-5 md:p-16">
           <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-6 gap-2">
             <div className="flex gap-2 flex-wrap">

@@ -2,27 +2,30 @@
 export const Menu = [
   {
     name: "Our Service",
-    nameJa: "事業内容",
-    href: "/#service",
+    nameJa: "サービスについて",
+    href: "/#about",
   },
   {
     name: "About  us",
-    nameJa: "会社概要",
-    href: "/#about",
+    nameJa: "テスト対策",
+    href: "/#structure",
   },
 
-  // {
-  //   name: '料金プラン',
-  //   href: '/#plan',
-  // },
-  // {
-  //   name: 'お問い合わせ',
-  //   href: '/contact',
-  // },
-  // {
-  //   name: 'Case study',
-  //   href: '/#casestudy',
-  // },
+  {
+    name: "Course",
+    nameJa: "入試対策講座",
+    href: "/#course",
+  },
+  {
+    name: "Plan",
+    nameJa: "料金プラン",
+    href: "/#price",
+  },
+  {
+    name: "FAQ",
+    nameJa: "よくある質問",
+    href: "/#faq",
+  },
   // {
   //   name: 'Blog',
   //   href: '/#blog',

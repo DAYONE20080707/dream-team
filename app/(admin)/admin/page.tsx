@@ -4,7 +4,7 @@ import Admin from "@/components/admin/Admin"
 const AdminHomePage = () => {
   return (
     <>
-      <Admin pageName="Home" />
+      {/* <Admin pageName="Home" /> */}
     </>
   )
 }

@@ -1,24 +1,24 @@
 // components/strength/Strength_02.tsx
 
-"use client";
+"use client"
 
-import ContentHeadline from "@/components/ui/frame/ContentHeadline";
-import StrengthCard from "@/components/ui/ItemCard/StrengthCard_02";
-import { strengthData } from "@/components/data/top/StrengthData";
-import MoreLinkButton from "@/components/ui/button/MoreButton";
-import SectionContent from "@/components/ui/frame/SectionContent";
+import ContentHeadline from "@/components/ui/frame/ContentHeadline"
+import StrengthCard from "@/components/ui/ItemCard/StrengthCard_02"
+import { strengthData } from "@/data/top/StrengthData"
+import MoreLinkButton from "@/components/ui/button/MoreButton"
+import SectionContent from "@/components/ui/frame/SectionContent"
 
 // 強み
 const Strength_02 = () => {
   return (
     <>
-      <SectionContent>
+      <SectionContent variant="yellow">
         {/* widthがフルサイズでない場合は指定する */}
-        <section className="md:max-w-[1200px] mx-auto space-y-10">
+        <section className="md:max-w-[1280px] mx-auto space-y-10">
           <ContentHeadline
-            subTitle="Strength"
-            mainTitle="私たちの強み"
-            className="text-center"
+            subTitle="Result"
+            mainTitle="合格実績"
+            className="text-center text-accentColor"
           />
 
           {/* gridレイアウトを使用して3列にカードを配置 */}
@@ -35,13 +35,13 @@ const Strength_02 = () => {
             ))}
           </div>
         </section>
-        <MoreLinkButton
+        {/* <MoreLinkButton
           href="/"
           className="mt-16 text-accentColor border-accentColor mx-auto"
-        />
+        /> */}
       </SectionContent>
     </>
-  );
-};
+  )
+}
 
-export default Strength_02;
+export default Strength_02

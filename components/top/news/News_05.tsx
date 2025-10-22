@@ -68,7 +68,7 @@ const News_05 = ({ limit = 6 }: NewsProps) => {
 
   return (
     <SectionContent>
-      <section className="md:max-w-[1200px] mx-auto">
+      <section className="md:max-w-[1280px] mx-auto">
         <div className="w-[300px]">
           <ContentHeadline subTitle="News" mainTitle="お知らせ" />
         </div>

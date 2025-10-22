@@ -1,23 +1,23 @@
 // components/case/Case_05.tsx
 
-"use client";
+"use client"
 
-import { useState, useEffect } from "react";
-import Image from "next/image";
+import { useState, useEffect } from "react"
+import Image from "next/image"
 // import { microcms } from "@/lib/microcms";
-import { Cms } from "@/types";
-import ContentHeadline from "@/components/ui/frame/ContentHeadline";
-import MoreButton from "@/components/ui/button/MoreButton";
-import { casesFetch } from "@/lib/api/casesFetch";
-import SectionContent from "@/components/ui/frame/SectionContent";
+import { Cms } from "@/types"
+import ContentHeadline from "@/components/ui/frame/ContentHeadline"
+import MoreButton from "@/components/ui/button/MoreButton"
+import { casesFetch } from "@/lib/api/casesFetch"
+import SectionContent from "@/components/ui/frame/SectionContent"
 
 interface CaseProps {
-  limit?: number;
+  limit?: number
 }
 
 const Case_05 = ({ limit = 6 }: CaseProps) => {
-  const [contents, setContents] = useState<Cms[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [contents, setContents] = useState<Cms[]>([])
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     // --- 旧 microcms 実装 ---
@@ -43,31 +43,31 @@ const Case_05 = ({ limit = 6 }: CaseProps) => {
     */
 
     // --- 新 casesFetch 実装 ---
-    let mounted = true;
-    (async () => {
+    let mounted = true
+    ;(async () => {
       try {
-        setLoading(true);
-        const data = await casesFetch.list(Math.min(limit ?? 100, 100));
-        if (mounted) setContents(data);
+        setLoading(true)
+        const data = await casesFetch.list(Math.min(limit ?? 100, 100))
+        if (mounted) setContents(data)
       } catch (error) {
-        console.error("Failed to fetch cases:", error);
-        if (mounted) setContents([]);
+        console.error("Failed to fetch cases:", error)
+        if (mounted) setContents([])
       } finally {
-        if (mounted) setLoading(false);
+        if (mounted) setLoading(false)
       }
-    })();
+    })()
 
     return () => {
-      mounted = false;
-    };
-  }, [limit]);
+      mounted = false
+    }
+  }, [limit])
 
-  if (loading) return <h1>Loading...</h1>;
-  if (!contents || contents.length === 0) return <h1>No contents</h1>;
+  if (loading) return <h1>Loading...</h1>
+  if (!contents || contents.length === 0) return <h1>No contents</h1>
 
   return (
     <SectionContent>
-      <section className="md:max-w-[1200px] mx-auto">
+      <section className="md:max-w-[1280px] mx-auto">
         <div className="md:w-[300px]">
           <ContentHeadline subTitle="Case study" mainTitle="導入事例" />
         </div>
@@ -99,7 +99,7 @@ const Case_05 = ({ limit = 6 }: CaseProps) => {
         </div>
       </section>
     </SectionContent>
-  );
-};
+  )
+}
 
-export default Case_05;
+export default Case_05

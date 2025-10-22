@@ -86,7 +86,7 @@ const Case_02 = ({ limit = 5 }: CaseProps) => {
 
   return (
     <SectionContent className="bg-bgLight">
-      <section className="md:max-w-[1200px] mx-auto relative">
+      <section className="md:max-w-[1280px] mx-auto relative">
         <ContentHeadline subTitle="Case study" mainTitle="導入事例" />
 
         <Swiper

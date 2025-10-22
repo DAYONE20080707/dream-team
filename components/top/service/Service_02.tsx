@@ -3,7 +3,7 @@
 
 import ContentHeadline from "@/components/ui/frame/ContentHeadline"
 import ServiceCard from "@/components/ui/ItemCard/ServiceCard_02"
-import { serviceData } from "@/components/data/top/ServiceData"
+import { serviceData } from "@/data/top/ServiceData"
 import Image from "next/image"
 import MoreButton from "@/components/ui/button/MoreButton"
 import SectionContent from "@/components/ui/frame/SectionContent"
@@ -20,7 +20,7 @@ const Service_02 = () => {
   return (
     <>
       <SectionContent id="service">
-        <section className="md:max-w-[1200px] mx-auto">
+        <section className="md:max-w-[1280px] mx-auto">
           <div className="flex flex-col-reverse md:flex-row gap-10 md:gap-20">
             <div className="flex-1 flex items-center justify-center">
               <Image
@@ -59,7 +59,7 @@ const Service_02 = () => {
             </div>
           </div>
           <div className="mt-16 flex justify-center">
-            <MoreButton href="/service" variant="accent" />
+            <MoreButton href="/service" variant="blue" />
           </div>
         </section>
       </SectionContent>
