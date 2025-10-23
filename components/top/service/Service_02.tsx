@@ -3,7 +3,7 @@
 
 import ContentHeadline from "@/components/ui/frame/ContentHeadline"
 import ServiceCard from "@/components/ui/ItemCard/ServiceCard_02"
-import { serviceData } from "@/data/top/ServiceData"
+import { serviceData } from "@/components/data/top/ServiceData"
 import Image from "next/image"
 import MoreButton from "@/components/ui/button/MoreButton"
 import SectionContent from "@/components/ui/frame/SectionContent"
@@ -59,7 +59,7 @@ const Service_02 = () => {
             </div>
           </div>
           <div className="mt-16 flex justify-center">
-            <MoreButton href="/service" variant="blue" />
+            <MoreButton href="/service" variant="accent" />
           </div>
         </section>
       </SectionContent>

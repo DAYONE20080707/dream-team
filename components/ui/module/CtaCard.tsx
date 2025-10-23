@@ -5,7 +5,7 @@ import { CircleArrowDown } from "lucide-react"
 
 const CtaCard = () => {
   return (
-    <div className="bg-white rounded-[20px] py-8 px-5 md:px-20 flex flex-col md:flex-row gap-5 items-center justify-between mx-auto shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] max-w-[1280px]">
+    <div className="fixed bottom-10 left-1/2 -translate-x-1/2 bg-white rounded-[20px] py-8 px-5 md:px-20 flex flex-col md:flex-row gap-5 items-center justify-between mx-auto shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] max-w-[1280px] w-[90%] md:w-full z-10">
       {/* 左側のテキスト部分 */}
       <div className="flex flex-col relative items-center gap-4">
         <div className="flex items-center">
@@ -37,7 +37,9 @@ const CtaCard = () => {
         href="/#contact"
         className="w-full bg-accentGreen text-white px-6 py-5 rounded-full flex items-center justify-center gap-2 max-w-[508px]"
       >
-        <span className="text-lg md:text-[26px] font-semibold">お問い合わせはこちら</span>
+        <span className="text-lg md:text-[26px] font-semibold whitespace-nowrap">
+          お問い合わせはこちら
+        </span>
         <CircleArrowDown className="w-6 h-6 text-white" />
       </Link>
     </div>
