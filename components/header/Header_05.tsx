@@ -129,7 +129,7 @@ const Header_05 = () => {
 
         {/* スマホ用メニュー */}
         <div
-          className={`absolute top-20 left-0 w-full h-screen bg-gray-800 bg-opacity-70 text-white md:hidden transition-opacity duration-300 ${
+          className={`absolute top-20 left-0 w-full h-screen bg-gray-800 bg-opacity-70 z-20 text-white md:hidden transition-opacity duration-300 ${
             isMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
           } ${isAnimating ? "pointer-events-auto" : ""}`}
         >
