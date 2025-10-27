@@ -14,12 +14,13 @@ const Strength_03 = () => {
     <>
       <SectionContent variant="gradient" id="structure">
         {/* widthがフルサイズでない場合は指定する */}
-        <section className="md:max-w-[1280px] mx-auto space-y-10">
-          <ContentHeadline
+        <section className="md:max-w-[1280px] mx-auto space-y-10 md:space-y-24">
+          {/* <ContentHeadline
             subTitle="Structure"
             mainTitle="テスト対策の仕組み"
             className="text-center text-white"
-          />
+          /> */}
+          <h2 className="text-center text-white text-2xl md:text-[40px] font-bold">テスト対策の仕組み</h2>
 
           {/* gridレイアウトを使用して3列にカードを配置 */}
           <div className="grid md:grid-cols-3 gap-10">
