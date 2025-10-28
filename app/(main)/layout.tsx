@@ -1,6 +1,7 @@
 import Footer_01 from "@/components/footer/Footer_01"
 import Footer_02 from "@/components/footer/Footer_02"
 import Header_05 from "@/components/header/Header_05"
+import FixedLineButton from "@/components/ui/button/FixedLineButton"
 
 interface MainLayoutProps {
   children: React.ReactNode
@@ -12,6 +13,7 @@ const MainLayout = ({ children }: MainLayoutProps) => {
       <Header_05 />
       <main className="flex-1">{children}</main>
       <Footer_01 />
+      <FixedLineButton />
     </div>
   )
 }
