@@ -9,7 +9,7 @@ export const structureData = [
   },
   {
     number: "02",
-    title: "中学校ごとに特化した教材演習",
+    title: "中学校ごとに特化した演習",
     description:
       "お子さんの中学校に合わせたテキストやプリントを使用し、テスト対策を行います。１中学校区専門塾だからこそできる対策を実施します。",
     image: "/top/strength/02.png",

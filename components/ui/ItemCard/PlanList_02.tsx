@@ -19,7 +19,7 @@ const PlanList_02 = () => {
         </div>
       </div>
       <ul className="mt-6 text-xs gap-y-2 text-right">
-        <li className="mb-2">※ MBA 調べ</li>
+        <li className="mb-2">※ (資)MBA調べ</li>
       </ul>
     </div>
   )

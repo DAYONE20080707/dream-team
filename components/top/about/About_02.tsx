@@ -16,11 +16,11 @@ const About_02 = () => {
         {/* widthがフルサイズでない場合は指定する */}
         <section className=" max-w-[1280px] mx-auto ">
           <div className="relative pt-20 md:pt-40">
-            <span className="absolute top-0 left-1/2 transform -translate-x-1/2 text-[100px] md:text-[213px] font-black font-en text-bgBlue whitespace-nowrap leading-[100%]">
+            {/* <span className="absolute top-0 left-1/2 transform -translate-x-1/2 text-[100px] md:text-[213px] font-black font-en text-bgBlue whitespace-nowrap leading-[100%]">
               What We Can Do
-            </span>
-            <h2 className="relative mx-auto w-fit text-center text-accentColor text-2xl md:text-[31px] font-bold pb-2 border-b-2 border-accentColor">
-              私たちのサービスでできること
+            </span> */}
+            <h2 className="relative mx-auto w-fit text-center text-accentColor text-2xl md:text-[44px] font-bold pb-2 border-b-2 border-accentColor">
+            1中学校区専門塾のメリット
             </h2>
           </div>
           <div className="mt-16 md:mt-24">

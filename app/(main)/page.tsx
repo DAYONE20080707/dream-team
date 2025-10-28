@@ -73,6 +73,7 @@ const HomePage = () => {
       <Strength_03 />
       <Strength_01 />
       <Voice_01 />
+      <Cta_01 />
       <Service_01 />
       <Strength_02 />
       <Cta_01 />

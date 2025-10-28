@@ -18,15 +18,20 @@ const Service_01 = () => {
   return (
     <>
       <SectionContent variant="gradient" id="course">
-        <section className="md:max-w-[1280px] mx-auto space-y-10">
-          <ContentHeadline
+        <section className="md:max-w-[1280px] mx-auto space-y-10 md:space-y-24">
+          <div><ContentHeadline
             subTitle="Course"
             mainTitle="入試対策講座"
             className="text-white"
             subTitleClassName="text-center"
             titleClassName="text-center"
           />
-
+          <p className="text-center text-white text-2xl md:text-[40px] font-bold !leading-[180%]">
+            他の個別指導塾と違って、
+            <br />
+            集団指導塾以上の入試対策講座もご用意しています！
+          </p></div>
+         
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-8">
             {servicesToDisplay.map((service) => (
               <ServiceCard
@@ -42,7 +47,9 @@ const Service_01 = () => {
             ))}
           </div>
         </section>
-        <p className="mt-20 mx-auto text-white font-bold text-xl md:text-2xl md:text-[45px] text-center pb-2 border-b border-white w-fit md:px-10 !leading-[160%]">上記の対策を個別で行うから、結果が出るんです！</p>
+        <p className="mt-20 mx-auto text-white font-bold text-xl md:text-2xl md:text-[45px] text-center pb-2 border-b border-white w-fit md:px-10 !leading-[160%]">
+          上記の対策を個別で行うから、結果が出るんです！
+        </p>
       </SectionContent>
     </>
   )
