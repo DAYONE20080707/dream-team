@@ -1,15 +1,15 @@
 // components/strength/Strength_01.tsx
 
-"use client"
+"use client";
 
-import ContentHeadline from "@/components/ui/frame/ContentHeadline"
-import PageContent from "@/components/ui/frame/PageContent"
-import ResultCard from "@/components/ui/ItemCard/ResultCard"
-import { resultsData } from "@/data/top/ResultsData"
-import MoreLinkButton from "@/components/ui/button/MoreButton"
-import SectionContent from "@/components/ui/frame/SectionContent"
-import ContentHeadlineReverse from "@/components/ui/frame/ContentHeadlineReverse"
-import Image from "next/image"
+import ContentHeadline from "@/components/ui/frame/ContentHeadline";
+import PageContent from "@/components/ui/frame/PageContent";
+import ResultCard from "@/components/ui/ItemCard/ResultCard";
+import { resultsData } from "@/data/top/ResultsData";
+import MoreLinkButton from "@/components/ui/button/MoreButton";
+import SectionContent from "@/components/ui/frame/SectionContent";
+import ContentHeadlineReverse from "@/components/ui/frame/ContentHeadlineReverse";
+import Image from "next/image";
 
 // 強み
 const Strength_01 = () => {
@@ -31,6 +31,7 @@ const Strength_01 = () => {
                 key={`${result.name}-${index}`}
                 name={result.name}
                 result={result.result}
+                score={result.score}
                 image={result.image}
               />
             ))}
@@ -43,7 +44,7 @@ const Strength_01 = () => {
         </div> */}
       </SectionContent>
     </>
-  )
-}
+  );
+};
 
-export default Strength_01
+export default Strength_01;

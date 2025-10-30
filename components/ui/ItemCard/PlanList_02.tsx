@@ -14,8 +14,8 @@ const PlanList_02 = () => {
             features={["¥4,510", "¥5,280", "¥5,720"]}
             isAccent={true}
           />
-          <PlanCard title="H社" features={["¥8,200", "¥8,200", "¥8,200"]} />
-          <PlanCard title="F社" features={["¥0,000", "¥0,000", "¥0,000"]} />
+          <PlanCard title="H社" features={["¥8,200", "¥14,500", "¥16,100"]} />
+          <PlanCard title="F社" features={["¥15,400", "¥17,050", "¥18,150"]} />
         </div>
       </div>
       <ul className="mt-6 text-xs gap-y-2 text-right">

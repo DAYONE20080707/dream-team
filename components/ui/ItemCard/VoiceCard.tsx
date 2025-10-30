@@ -23,8 +23,8 @@ const VoiceCard: React.FC<VoiceCardProps> = ({
           <h3 className="text-accentColor font-bold text-xl">{name}</h3>
           <p className=" mt-4 text-base leading-[160%]">{comment}</p>
 
-          <div className="mt-6 flex rounded-[10px] gap-2 bg-bgBlue py-4 px-4 md:px-10">
-            <div>
+          <div className="mt-6 flex rounded-[10px] gap-4 bg-bgBlue py-4 px-4 md:px-10">
+            <div className="flex-shrink-0">
               <Image
                 src="/top/voice/voice_man.png"
                 alt={name}
@@ -38,7 +38,7 @@ const VoiceCard: React.FC<VoiceCardProps> = ({
               <ul className="space-y-1">
                 {instructorComments.map((comment, index) => (
                   <li key={index} className="text-lg font-bold">
-                    ・{comment}
+                    {comment}
                   </li>
                 ))}
               </ul>

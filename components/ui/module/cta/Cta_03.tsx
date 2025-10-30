@@ -1,12 +1,12 @@
 // components/module/cta/Cta_03.tsx
-"use client"
+"use client";
 
-import Image from "next/image"
-import Link from "next/link"
-import PageContent from "@/components/ui/frame/PageContent"
-import FreeButtonWhite from "@/components/ui/button/FreeButtonWhite"
-import SectionContent from "../../frame/SectionContent"
-import MoreLinkButton from "../../button/MoreButton"
+import Image from "next/image";
+import Link from "next/link";
+import PageContent from "@/components/ui/frame/PageContent";
+import FreeButtonWhite from "@/components/ui/button/FreeButtonWhite";
+import SectionContent from "../../frame/SectionContent";
+import MoreLinkButton from "../../button/MoreButton";
 
 const Cta_03 = () => {
   return (
@@ -48,14 +48,14 @@ const Cta_03 = () => {
                 variant="blue"
                 showArrow={false}
               >
-                00-0000-0000
+                0120-419-816
               </MoreLinkButton>
             </div>
           </div>
         </section>
       </SectionContent>
     </>
-  )
-}
+  );
+};
 
-export default Cta_03
+export default Cta_03;
