@@ -39,19 +39,19 @@ export const resultsData = [
     name: "中３Hさん",
     result: "数学 84点⇒100点",
     score: "16点UP!",
-    image: "/top/results/06.png",
+    image: "/top/results/07.png",
   },
   {
     name: "中３Mさん",
     result: "英語 68点⇒90点",
     score: "22点UP!",
-    image: "/top/results/06.png",
+    image: "/top/results/08.png",
   },
   {
     name: "中３Tさん",
     result: "５教科 244点⇒339点",
     score: "95点UP!",
-    image: "/top/results/06.png",
+    image: "/top/results/09.png",
   },
  
 ]
