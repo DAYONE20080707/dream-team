@@ -1,18 +1,18 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { useRouter } from "next/navigation"
-import SubmitButton from "@/components/ui/button/SubmitButton"
-import SectionContent from "@/components/ui/frame/SectionContent"
-import ContentHeadline from "@/components/ui/frame/ContentHeadline"
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import SubmitButton from "@/components/ui/button/SubmitButton";
+import SectionContent from "@/components/ui/frame/SectionContent";
+import ContentHeadline from "@/components/ui/frame/ContentHeadline";
 
 interface FormField {
-  label: string
-  name: string
-  type: "text" | "email" | "tel" | "textarea" | "select"
-  placeholder?: string
-  required: boolean
-  options?: { value: string; label: string }[]
+  label: string;
+  name: string;
+  type: "text" | "email" | "tel" | "textarea" | "select";
+  placeholder?: string;
+  required: boolean;
+  options?: { value: string; label: string }[];
 }
 
 const formFields: FormField[] = [
@@ -60,7 +60,7 @@ const formFields: FormField[] = [
     label: "電話番号",
     name: "phone",
     type: "tel",
-    placeholder: "00-0000-0000",
+    placeholder: "0120-419-816",
     required: true,
   },
   {
@@ -104,51 +104,51 @@ const formFields: FormField[] = [
     placeholder: "お問い合わせ内容を入力してください",
     required: true,
   },
-]
+];
 
-const initialFormData: Record<string, string> = {}
+const initialFormData: Record<string, string> = {};
 formFields.forEach((field) => {
-  initialFormData[field.name] = ""
-})
+  initialFormData[field.name] = "";
+});
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState(initialFormData)
-  const [loading, setLoading] = useState(false)
-  const [responseMessage, setResponseMessage] = useState("")
-  const router = useRouter()
+  const [formData, setFormData] = useState(initialFormData);
+  const [loading, setLoading] = useState(false);
+  const [responseMessage, setResponseMessage] = useState("");
+  const router = useRouter();
 
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
     >
   ) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value })
-  }
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setLoading(true)
-    setResponseMessage("")
+    e.preventDefault();
+    setLoading(true);
+    setResponseMessage("");
 
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
-      })
+      });
 
       if (res.ok) {
-        router.push("/contact/thanks")
+        router.push("/contact/thanks");
       } else {
-        const data = await res.json()
-        setResponseMessage(data.error || "送信に失敗しました。")
+        const data = await res.json();
+        setResponseMessage(data.error || "送信に失敗しました。");
       }
     } catch (error) {
-      setResponseMessage("エラーが発生しました。")
+      setResponseMessage("エラーが発生しました。");
     } finally {
-      setLoading(false)
+      setLoading(false);
     }
-  }
+  };
 
   return (
     <SectionContent className="" variant="gradient" id="contact">
@@ -218,17 +218,21 @@ const ContactForm = () => {
               <SubmitButton loading={loading} />
             </div>
             <p className="text-center ![line-height:160%] text-xs md:text-sm mt-6 md:mt-16 tracking-[0.05em] whitespace-pre-line">
-            上記ボタンを押すことで、利用規約および、当社のサービス等に関する情報を提供する目的で、<br />
-株式会社ドリーム・チームが送信された個人情報を保管・処理することに同意したものとみなされます。<br />
-お客様はこれらの情報提供をいつでも停止できます。<br />
-個人情報の開示や削除依頼等のお問い合わせ先、およびお客様の個人情報を尊重して保護するための弊社取り組みについては、<br />
-プライバシーポリシーをご覧ください。
+              上記ボタンを押すことで、利用規約および、当社のサービス等に関する情報を提供する目的で、
+              <br />
+              株式会社ドリーム・チームが送信された個人情報を保管・処理することに同意したものとみなされます。
+              <br />
+              お客様はこれらの情報提供をいつでも停止できます。
+              <br />
+              個人情報の開示や削除依頼等のお問い合わせ先、およびお客様の個人情報を尊重して保護するための弊社取り組みについては、
+              <br />
+              プライバシーポリシーをご覧ください。
             </p>
           </form>
         </section>
       </div>
     </SectionContent>
-  )
-}
+  );
+};
 
-export default ContactForm
+export default ContactForm;

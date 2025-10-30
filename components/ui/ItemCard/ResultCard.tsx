@@ -1,13 +1,19 @@
 // components/ui/ItemCard/ResultCard.tsx
-import Image from "next/image"
+import Image from "next/image";
 
 interface ResultCardProps {
-  name: string
-  result: string
-  image: string
+  name: string;
+  result: string;
+  score: string;
+  image: string;
 }
 
-const ResultCard: React.FC<ResultCardProps> = ({ name, result, image }) => {
+const ResultCard: React.FC<ResultCardProps> = ({
+  name,
+  result,
+  score,
+  image,
+}) => {
   return (
     <div className="bg-white rounded-lg shadow-md p-4 text-center">
       {/* 生徒の画像 */}
@@ -21,9 +27,11 @@ const ResultCard: React.FC<ResultCardProps> = ({ name, result, image }) => {
       {/* 点数アップボタン */}
       <div className="bg-accentColor text-accentYellow px-4 py-2 text-[28px] font-bold">
         {result}
+        <br />
+        {score}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ResultCard
+export default ResultCard;

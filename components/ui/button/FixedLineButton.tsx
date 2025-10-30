@@ -27,7 +27,7 @@ const FixedLineButton = () => {
         className="font-bold text-accentColor text-[22px] tracking-[0.1em]"
         style={{ writingMode: "vertical-rl" }}
       >
-        無料相談受付中
+        役立つ教育情報発信中
       </div>
     </Link>
   )

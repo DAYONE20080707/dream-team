@@ -27,8 +27,8 @@ const CtaCard = () => {
             className="w-5 h-5 scale-x-[-1] object-contain"
           />
         </div>
-        <p className="text-black text-3xl md:text-[51px] font-bold">
-          無料相談受付中!
+        <p className="text-black text-3xl md:text-[40px] font-bold">
+        入塾説明・体験授業受付中！!
         </p>
       </div>
 

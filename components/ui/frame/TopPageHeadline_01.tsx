@@ -49,7 +49,7 @@ const TopPageHeadline_01: React.FC<TopPageHeadline_01Props> = ({
       {subtitleTop && (
         <p
           className={classNames(
-            "mt-6 text-lg md:text-[39px] font-bold tracking-[0.05em] !leading-[110%] text-accentColor",
+            "mt-6 text-lg md:text-[39px] font-bold tracking-[0.05em] !leading-[110%] text-accentGreen",
             subtitleClassName
           )}
         >

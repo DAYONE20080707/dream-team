@@ -1,16 +1,16 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { useRouter } from "next/navigation"
-import SubmitButton from "@/components/ui/button/SubmitButton"
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import SubmitButton from "@/components/ui/button/SubmitButton";
 
 interface FormField {
-  label: string
-  name: string
-  type: "text" | "email" | "tel" | "textarea" | "select"
-  placeholder?: string
-  required: boolean
-  options?: { value: string; label: string }[]
+  label: string;
+  name: string;
+  type: "text" | "email" | "tel" | "textarea" | "select";
+  placeholder?: string;
+  required: boolean;
+  options?: { value: string; label: string }[];
 }
 
 const formFields: FormField[] = [
@@ -72,7 +72,7 @@ const formFields: FormField[] = [
     label: "お電話番号",
     name: "phone",
     type: "tel",
-    placeholder: "00-0000-0000",
+    placeholder: "0120-419-816",
     required: true,
   },
   // {
@@ -94,51 +94,51 @@ const formFields: FormField[] = [
     placeholder: "お問い合わせ内容を入力してください",
     required: true,
   },
-]
+];
 
-const initialFormData: Record<string, string> = {}
+const initialFormData: Record<string, string> = {};
 formFields.forEach((field) => {
-  initialFormData[field.name] = ""
-})
+  initialFormData[field.name] = "";
+});
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState(initialFormData)
-  const [loading, setLoading] = useState(false)
-  const [responseMessage, setResponseMessage] = useState("")
-  const router = useRouter()
+  const [formData, setFormData] = useState(initialFormData);
+  const [loading, setLoading] = useState(false);
+  const [responseMessage, setResponseMessage] = useState("");
+  const router = useRouter();
 
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
     >
   ) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value })
-  }
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setLoading(true)
-    setResponseMessage("")
+    e.preventDefault();
+    setLoading(true);
+    setResponseMessage("");
 
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
-      })
+      });
 
       if (res.ok) {
-        router.push("/contact/thanks")
+        router.push("/contact/thanks");
       } else {
-        const data = await res.json()
-        setResponseMessage(data.error || "送信に失敗しました。")
+        const data = await res.json();
+        setResponseMessage(data.error || "送信に失敗しました。");
       }
     } catch (error) {
-      setResponseMessage("エラーが発生しました。")
+      setResponseMessage("エラーが発生しました。");
     } finally {
-      setLoading(false)
+      setLoading(false);
     }
-  }
+  };
 
   return (
     <article className="w-full md:max-w-[1240px] h-auto mx-auto px-5 md:px-5 pt-16 pb-20 md:pt-[120px] md:pb-[134px]">
@@ -237,7 +237,7 @@ const ContactForm = () => {
         </section>
       </div>
     </article>
-  )
-}
+  );
+};
 
-export default ContactForm
+export default ContactForm;
