@@ -161,7 +161,7 @@ const ContactForm = () => {
 
         <section className="text-sm md:text-lg mt-10 md:mt-20 mx-auto text-white">
           {responseMessage && <p className="text-red-500">{responseMessage}</p>}
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} data-hs-cf-bound="true">
             {formFields.map((field) => (
               <div key={field.name} className="mb-6 md:mb-6 w-full">
                 <label className="text-sm md:text-base block mb-1 md:mb-2 ![line-height:200%]">
