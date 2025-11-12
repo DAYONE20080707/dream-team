@@ -31,7 +31,7 @@ const Voice_01 = () => {
             GoogleMap でも高評価のクチコミをたくさんいただいています！
           </p>
 
-          <div className="mt-5 grid md:grid-cols-3 gap-10">
+          <div className="mt-5 grid md:grid-cols-2 max-w-[800px] mx-auto gap-10">
             <div className="flex justify-center">
               <Image
                 src="/top/voice/award1.png"
@@ -50,15 +50,7 @@ const Voice_01 = () => {
                 className="object-contain w-full"
               />
             </div>
-            <div className="flex justify-center">
-              <Image
-                src="/top/voice/award3.png"
-                alt="Award 3"
-                width={300}
-                height={200}
-                className="object-contain w-full"
-              />
-            </div>
+            
           </div>
           <p className="mt-5 text-base text-accentColor font-bold text-center">
             ※上記は、過去１年間(2024 年9 月１日〜2025 年８月31
