@@ -19,7 +19,7 @@ const Cta_03 = () => {
               Download
             </h4>
             <p className="md:text-lg my-3 md:my-6 leading-[160%]">
-              もっと詳しい情報を知りたい方はこちらから資料ダウンロード
+              資料請求やデジタルパンフレットのダウンロードはこちら
             </p>
             <div className="flex justify-center">
               <MoreLinkButton
