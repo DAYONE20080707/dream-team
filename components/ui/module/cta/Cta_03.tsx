@@ -23,7 +23,7 @@ const Cta_03 = () => {
             </p>
             <div className="flex justify-center">
               <MoreLinkButton
-                href="/"
+                href="https://liff.line.me/2006872810-O64PNRmw/landing?follow=%40288rxmrj&lp=txIfrd&liff_id=2006872810-O64PNRmw"
                 className=""
                 icon="/sns/line.svg"
                 variant="green"
