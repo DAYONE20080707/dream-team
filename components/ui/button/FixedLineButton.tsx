@@ -6,9 +6,7 @@ import Link from "next/link"
 const FixedLineButton = () => {
   return (
     <Link
-      href="https://line.me/R/ti/p/@dream-team"
-      target="_blank"
-      rel="noopener noreferrer"
+      href="https://liff.line.me/2006872810-O64PNRmw/landing?follow=%40288rxmrj&lp=KrBGsg&liff_id=2006872810-O64PNRmw"
       className="fixed top-[20%] md:top-[30%] right-0 z-50 flex flex-col items-center justify-center gap-2 bg-accentYellow px-2 md:px-3 py-4 md:py-5 shadow-[0_0_24.583px_0_rgba(0,0,0,0.10)] md:bottom-16 md:right-0 h-fit"
     >
       {/* LINEアイコン */}

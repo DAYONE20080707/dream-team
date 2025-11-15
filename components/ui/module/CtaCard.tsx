@@ -34,7 +34,7 @@ const CtaCard = () => {
 
       {/* 右側のボタン部分 */}
       <Link
-        href="/#contact"
+        href="https://liff.line.me/2006872810-O64PNRmw/landing?follow=%40288rxmrj&lp=KrBGsg&liff_id=2006872810-O64PNRmw"
         className="absolute md:relative -bottom-4 md:bottom-auto w-full bg-accentGreen text-white px-6 py-3 md:py-5 rounded-full flex items-center justify-center gap-2 max-w-[287px] md:max-w-[508px]"
       >
         <span className="text-base md:text-[26px] font-semibold whitespace-nowrap">
